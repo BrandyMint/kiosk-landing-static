@@ -34,7 +34,7 @@ module.exports = {
       dest: build
     }
     sass: {
-      src: src + '/stylesheets/main.scss'
+      src: src + '/stylesheets/local.scss'
       dest: build + '/stylesheets'
       outputName: 'local.css'
     }
@@ -64,7 +64,7 @@ module.exports = {
     }
     styles: {
       bundle: {
-        src: src + '/stylesheets/bundle.scss'
+        src: src + '/stylesheets/dist.scss'
         dest: dist + '/stylesheets'
         outputName: 'bundle.css'
       }
