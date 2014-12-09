@@ -22,9 +22,7 @@
             .col-md-6.col-lg-5
               .kiosklanding-hero-info
                 %h1.kiosklanding-hero-title Быстрое, легкое и недорогое создание интернет-магазина
-                %button.btn.kiosklanding-callback-button
-                  %span.hidden-xs.hidden-sm Оставьте свой телефон и мы вам перезвоним
-                  %span.hidden-md.hidden-lg Перезвоните мне
+                .kiosklanding-callback-form-container{data: {'react-class': 'CallbackForm', 'react-props': '{"url": "/callback/"}'}}
           .iphone.visible-md.visible-lg
             .iphone-screen
               %img{src: 'images/screenshots/kiosk-mobile.jpg', alt: ''}
@@ -86,13 +84,7 @@
       .kiosklanding-callback
         .container.text-center
           %h1.kiosklanding-section-title Подключение и все базовые функции бесплатны
-
-          %div{data: {'react-class': 'CallbackForm'}}
-
-          %div.kiosklanding-callbackform
-            %button.btn.kiosklanding-callback-button
-              %span.hidden-xs.hidden-sm Оставьте свой телефон и мы вам перезвоним
-              %span.hidden-md.hidden-lg Перезвоните мне
+          .kiosklanding-callback-form-container{data: {'react-class': 'CallbackForm', 'react-props': '{"url": "/callback/"}'}}
 
 
     %script{src: 'scripts/vendor.js'}

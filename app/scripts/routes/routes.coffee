@@ -1,2 +1,1 @@
-window.Routes =
-  getCallbackPath: -> '/callback/'
+#window.Routes =
