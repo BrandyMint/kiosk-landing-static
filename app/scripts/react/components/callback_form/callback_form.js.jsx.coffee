@@ -51,10 +51,7 @@ window.CallbackForm = React.createClass
       when SUCCESS_STATE
         `<CallbackForm_Success />`
       when ERROR_STATE
-        `<div className='kiosklanding-callback-form-error-wrap'>
-          <CallbackForm_Error />
-          <CallbackForm_OpenButton onClick={ this.activateInputState } />
-         </div>`
+        `<CallbackForm_Error onFocusForm={ this.activateInputState } />`
       else console.warn 'Unknown currentState of CallbackForm component', @state.currentState
 
     return `<div className='kiosklanding-callback-form'>
@@ -150,5 +147,11 @@ window.CallbackForm_Success = React.createClass
 
 
 window.CallbackForm_Error = React.createClass
+  propTypes:
+    onFocusForm: React.PropTypes.func.isRequired
+
   render: ->
-    return `<h2 className='kiosklanding-callback-form-error'>{ERROR_MESSAGE}</h2>`
+    return `<div className='kiosklanding-callback-form-error-wrap'>
+              <h2 className='kiosklanding-callback-form-error'>{ERROR_MESSAGE}</h2>
+              <CallbackForm_OpenButton onClick={ this.props.onFocusForm } />
+            </div>`
