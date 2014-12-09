@@ -45,6 +45,24 @@ window.CallbackForm = React.createClass
 
   activateOpenState: -> @setState(currentState: INPUT_STATE)
   
+  
+
+window.CallbackForm_Form = React.createClass
+  mixins: [CallbackForm_Mixin]
+
+  propTypes:
+    onClose: React.PropTypes.func.isRequired
+
+  render: ->
+    return `<form className="kiosklanding-callback-form-form" onSubmit={ this.onSubmit }>
+              <CallbackForm_SubmitButton onSendData={ this.props.onSendData } />
+              <CallbackForm_Input onClose={ this.props.onClose }
+                                  onSendData={ this.onSendData } />
+            </form>`
+
+  onSubmit: ->
+    return false
+
 
 
 window.CallbackForm_OpenButton = React.createClass
@@ -69,19 +87,29 @@ window.CallbackForm_SubmitButton = React.createClass
               { SUBMIT_BUTTON_TEXT }
             </button>`
 
-
-window.CallbackForm_Form = React.createClass
-  mixins: [CallbackForm_Mixin]
-
+window.CallbackForm_Input = React.createClass
   propTypes:
-    onClose: React.PropTypes.func.isRequired
+    onEnter: React.PropTypes.func.isRequired
+    onBlur: React.PropTypes.func.isRequired
 
   render: ->
-    return `<form className="kiosklanding-callback-form-form" onSubmit={ this.onSubmit }>
-              <CallbackForm_SubmitButton onSendData={ this.props.onSendData } />
-              <CallbackForm_Input onClose={ this.props.onClose }
-                                  onSendData={ this.onSendData } />
-            </form>`
+    return `<input ref="input"
+                   type="tel"
+                   placeholder={ INPUT_PLACEHOLDER }
+                   autoFocus="true"
+                   className="kiosklanding-callback-form-input"
+                   onBlur={ this.handleBlur }
+                   onKeyDown={ this.handleChange }
+                   onPaste={ this.handleChange } />`
 
-  onSubmit: ->
-    return false
+  handleBlur: ->
+    if @getValue() is ""
+      @props.onBlur()
+
+  handleChange: (e) ->
+    if e.which == KEYCODE_ENTER
+      @props.onEnter @getValue()
+      return false
+
+  getValue: ->
+    @refs.input.getDOMNode().value.trim()
