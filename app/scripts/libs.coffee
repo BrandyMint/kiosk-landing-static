@@ -6,16 +6,8 @@ window.Dispatcher        = require('flux').Dispatcher
 window.EventEmitter      = require 'eventEmitter'
 window.accounting        = require 'accounting'
 
-# jQuery plugins
-require 'jquery.role'
-require 'jquery.mmenu'
-
 # Others
 require('react-mixin-manager')(window.React)
-require 'bootstrapSass'
-require 'owlCarousel'
-require 'fancybox'
-require 'fancybox.wannabe'
 
 window.accounting.settings =
   currency:
