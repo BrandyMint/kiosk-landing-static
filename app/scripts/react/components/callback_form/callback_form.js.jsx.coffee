@@ -48,20 +48,17 @@ window.CallbackForm = React.createClass
   
 
 window.CallbackForm_Form = React.createClass
-  mixins: [CallbackForm_Mixin]
 
   propTypes:
     onClose: React.PropTypes.func.isRequired
+    onSubmit: React.PropTypes.func.isRequired
 
   render: ->
-    return `<form className="kiosklanding-callback-form-form" onSubmit={ this.onSubmit }>
-              <CallbackForm_SubmitButton onSendData={ this.props.onSendData } />
-              <CallbackForm_Input onClose={ this.props.onClose }
-                                  onSendData={ this.onSendData } />
-            </form>`
-
-  onSubmit: ->
-    return false
+    return `<div className="kiosklanding-callback-form-form">
+              <CallbackForm_SubmitButton onSubmit={ this.props.onSendData } />
+              <CallbackForm_Input onBlur={ this.props.onClose } 
+                                  onEnter={ this.props.onSubmit } />
+            </div>`
 
 
 
