@@ -53,24 +53,21 @@ window.CallbackForm_Input = React.createClass
     onEnter: React.PropTypes.func.isRequired
     onBlur: React.PropTypes.func.isRequired
 
-  getInitialState: ->
-    isEmpty: true
-
   render: ->
     return `<input ref="input"
                    type="tel"
                    placeholder={ INPUT_PLACEHOLDER }
                    autoFocus="true"
                    className="kiosklanding-callback-form-input"
-                   onBlur={ this.onBlur }
-                   onKeyDown={ this.onChange }
-                   onPaste={ this.onChange } />`
+                   onBlur={ this.handleBlur }
+                   onKeyDown={ this.handleChange }
+                   onPaste={ this.handleChange } />`
 
-  onBlur: ->
+  handleBlur: ->
     if @getValue() is ""
       @props.onBlur()
 
-  onChange: (e) ->
+  handleChange: (e) ->
     if e.which == KEYCODE_ENTER
       @props.onEnter @getValue()
       return false
