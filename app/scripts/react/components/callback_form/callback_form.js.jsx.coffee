@@ -19,24 +19,23 @@ ERROR_MESSAGE          = 'Возникла ошибка! Попробуйте е
 
 KEYCODE_ENTER          = 13
 
-CALLBACKFORM_URL       = '/callback/'
-
 
 CallbackForm_Mixin =
   _sendData: (phoneNumber) ->
-    self = @
-
     $.ajax
-      url: CALLBACKFORM_URL
+      url: @props.url
       data:
         phoneNumber: phoneNumber
-      beforeSend: => @setState currentState: SEND_STATE
-      success: => @setState currentState: SUCCESS_STATE
-      error: => @setState currentState: ERROR_STATE
+      beforeSend: => @setState(currentState: SEND_STATE) if @isMounted()
+      success:    => @setState(currentState: SUCCESS_STATE) if @isMounted()
+      error:      => @setState(currentState: ERROR_STATE) if @isMounted()
 
 
 window.CallbackForm = React.createClass
   mixins: [CallbackForm_Mixin]
+
+  propTypes:
+    url: React.PropTypes.string.isRequired
 
   getInitialState: -> currentState: SHOW_STATE
 
@@ -45,7 +44,7 @@ window.CallbackForm = React.createClass
       when SHOW_STATE
         `<CallbackForm_OpenButton onClick={ this.activateInputState } />`
       when INPUT_STATE
-        `<CallbackForm_Form onClose={ this.activateShowState }
+        `<CallbackForm_Form onBlur={ this.activateShowState }
                             onSubmit={ this.handleSubmit } />`
       when SEND_STATE
         `<CallbackForm_Send />`
@@ -72,14 +71,14 @@ window.CallbackForm = React.createClass
 
 window.CallbackForm_Form = React.createClass
   propTypes:
-    onClose: React.PropTypes.func.isRequired
+    onBlur:   React.PropTypes.func.isRequired
     onSubmit: React.PropTypes.func.isRequired
 
   render: ->
     return `<div className='kiosklanding-callback-form-form'>
               <CallbackForm_SubmitButton onSubmit={ this.handleButtonSubmit } />
               <CallbackForm_Input ref="input"
-                                  onBlur={ this.props.onClose }
+                                  onBlur={ this.props.onBlur }
                                   onEnter={ this.props.onSubmit } />
             </div>`
 
@@ -113,7 +112,7 @@ window.CallbackForm_SubmitButton = React.createClass
 window.CallbackForm_Input = React.createClass
   propTypes:
     onEnter: React.PropTypes.func.isRequired
-    onBlur: React.PropTypes.func.isRequired
+    onBlur:  React.PropTypes.func.isRequired
 
   render: ->
     return `<input ref='input'
