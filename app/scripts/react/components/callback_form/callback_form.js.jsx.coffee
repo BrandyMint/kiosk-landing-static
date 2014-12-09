@@ -51,14 +51,14 @@ window.CallbackForm_Input = React.createClass
   mixins: [CallbackForm_Mixin]
 
   propTypes:
-    onCloseForm: React.PropTypes.func.isRequired
-    onSendData:  React.PropTypes.func.isRequired
+    handleCloseForm: React.PropTypes.func.isRequired
 
   getInitialState: ->
     isEmpty: true
 
   render: ->
-    return `<input type="tel"
+    return `<input ref="input"
+                   type="tel"
                    placeholder={ INPUT_PLACEHOLDER }
                    autoFocus="true"
                    className="kiosklanding-callback-form-input"
@@ -66,20 +66,20 @@ window.CallbackForm_Input = React.createClass
                    onKeyDown={ this.onChange }
                    onPaste={ this.onChange } />`
 
-  onBlur: (e) ->
-    if @getValue(e.target) is ""
+  onBlur: ->
+    if @getValue() is ""
       @props.onCloseForm()
 
   onChange: (e) ->
     if e.which == KEYCODE_ENTER
-      @onEnter(e)
+      @onEnter()
       return false
 
-  onEnter: (e) ->
-    @_sendData(@getValue(e.target))
+  onEnter: ->
+    @_sendData(@getValue())
 
-  getValue: (target) ->
-    target.value.trim()
+  getValue: ->
+    @refs.input.getDOMNode().value.trim()
 
 window.CallbackForm_Form = React.createClass
 
