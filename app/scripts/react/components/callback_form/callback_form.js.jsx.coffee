@@ -46,12 +46,12 @@ window.CallbackForm_SubmitButton = React.createClass
               { SUBMIT_BUTTON_TEXT }
             </button>`
 
+
+
 window.CallbackForm_Input = React.createClass
-
-  mixins: [CallbackForm_Mixin]
-
   propTypes:
-    handleCloseForm: React.PropTypes.func.isRequired
+    onEnter: React.PropTypes.func.isRequired
+    onBlur: React.PropTypes.func.isRequired
 
   getInitialState: ->
     isEmpty: true
@@ -68,21 +68,18 @@ window.CallbackForm_Input = React.createClass
 
   onBlur: ->
     if @getValue() is ""
-      @props.onCloseForm()
+      @props.onBlur()
 
   onChange: (e) ->
     if e.which == KEYCODE_ENTER
-      @onEnter()
+      @props.onEnter @getValue()
       return false
-
-  onEnter: ->
-    @_sendData(@getValue())
 
   getValue: ->
     @refs.input.getDOMNode().value.trim()
 
-window.CallbackForm_Form = React.createClass
 
+window.CallbackForm_Form = React.createClass
   mixins: [CallbackForm_Mixin]
 
   propTypes:
