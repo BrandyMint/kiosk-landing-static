@@ -62,18 +62,21 @@ window.CallbackForm_Input = React.createClass
                    placeholder={ INPUT_PLACEHOLDER }
                    autoFocus="true"
                    className="kiosklanding-callback-form-input"
-                   onBlur={ this.handleBlur }
-                   onKeyDown={ this.handleChange }
-                   onPaste={ this.handleChange } />`
+                   onBlur={ this.onBlur }
+                   onKeyDown={ this.onChange }
+                   onPaste={ this.onChange } />`
 
-  handleBlur: (e) ->
+  onBlur: (e) ->
     if @getValue(e.target) is ""
       @props.onCloseForm()
 
-  handleChange: (e) ->
+  onChange: (e) ->
     if e.which == KEYCODE_ENTER
-      @_sendData(@getValue(e.target))
+      @onEnter(e)
       return false
+
+  onEnter: (e) ->
+    @_sendData(@getValue(e.target))
 
   getValue: (target) ->
     target.value.trim()
