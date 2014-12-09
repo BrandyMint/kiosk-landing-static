@@ -26,11 +26,11 @@ CallbackForm_Mixin =
   _sendData: (phoneNumber) ->
     self = @
 
-    console.log(phoneNumber)
     $.ajax
       url: CALLBACKFORM_URL
       data:
         phoneNumber: phoneNumber
+      beforeSend: => @setState currentState: SEND_STATE
       success: => @setState currentState: SUCCESS_STATE
       error: => @setState currentState: ERROR_STATE
 
