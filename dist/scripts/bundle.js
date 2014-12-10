@@ -43,7 +43,7 @@ window.accounting.settings = {
 
 
 
-},{"accounting":"accounting","eventEmitter":"eventEmitter","flux":5,"jquery":"jquery","lodash":"lodash","react":"react","react-mixin-manager":"react-mixin-manager","reactUjs":"reactUjs"}],3:[function(require,module,exports){
+},{"accounting":undefined,"eventEmitter":undefined,"flux":5,"jquery":undefined,"lodash":undefined,"react":undefined,"react-mixin-manager":undefined,"reactUjs":undefined}],3:[function(require,module,exports){
 
 /** @jsx React.DOM */
 var CallbackForm_Mixin, ERROR_MESSAGE, ERROR_STATE, INPUT_PLACEHOLDER, INPUT_STATE, KEYCODE_ENTER, OPEN_BUTTON_FULL_TEXT, OPEN_BUTTON_SHORT_TEXT, SEND_MESSAGE, SEND_STATE, SHOW_STATE, SUBMIT_BUTTON_TEXT, SUCCESS_MESSAGE, SUCCESS_STATE;
@@ -75,12 +75,12 @@ ERROR_MESSAGE = 'Возникла ошибка! Попробуйте еще ра
 KEYCODE_ENTER = 13;
 
 CallbackForm_Mixin = {
-  _sendData: function(phoneNumber) {
+  _sendData: function(phone) {
     return $.ajax({
       url: this.props.postUrl,
       method: 'POST',
       data: {
-        phoneNumber: phoneNumber
+        phone: phone
       },
       beforeSend: (function(_this) {
         return function() {
@@ -3114,13 +3114,13 @@ module.exports = invariant;
 
 },{}],"eventEmitter":[function(require,module,exports){
 /*!
- * EventEmitter v4.2.11 - git.io/ee
- * Unlicense - http://unlicense.org/
- * Oliver Caldwell - http://oli.me.uk/
+ * EventEmitter v4.2.9 - git.io/ee
+ * Oliver Caldwell
+ * MIT license
  * @preserve
  */
 
-;(function () {
+(function () {
     'use strict';
 
     /**

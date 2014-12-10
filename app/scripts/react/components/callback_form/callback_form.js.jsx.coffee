@@ -21,12 +21,12 @@ KEYCODE_ENTER          = 13
 
 
 CallbackForm_Mixin =
-  _sendData: (phoneNumber) ->
+  _sendData: (phone) ->
     $.ajax
       url: @props.postUrl
       method: 'POST'
       data:
-        phoneNumber: phoneNumber
+        phone: phone
       beforeSend: => @setState(currentState: SEND_STATE) if @isMounted()
       success:    => @setState(currentState: SUCCESS_STATE) if @isMounted()
       error:      => @setState(currentState: ERROR_STATE) if @isMounted()
