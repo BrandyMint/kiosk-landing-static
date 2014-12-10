@@ -9,7 +9,6 @@ gulp.task 'styles', ->
   gulp.src config.src
     .pipe sass(
       errLogToConsole: true
-      sourceComments: 'normal'
       includePaths: [
         './app/stylesheets/'
         './app/bower_components/'

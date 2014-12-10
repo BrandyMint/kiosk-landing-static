@@ -82,7 +82,7 @@ module.exports = {
       dest: dist
     }
     assets: {
-      src: src + '/assets/**/*.{ttf,woff,eof,eot,svg,jpg,png,gif}'
+      src: src + '/assets/**/*.*'
       dest: dist + '/assets'
     }
   }
