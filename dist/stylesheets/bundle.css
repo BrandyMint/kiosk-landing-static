@@ -18,14 +18,14 @@
   font-weight: 300;
   font-style: normal; }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/settings/typography */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/settings/typography */
 body {
   font-weight: 300; }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .center-block-container {
   text-align: center; }
-  /* line 87, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/settings/mixins */
+  /* line 87, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/settings/mixins */
   .center-block-container:before {
     content: "";
     display: inline-block;
@@ -33,98 +33,98 @@ body {
     vertical-align: middle;
     margin-right: -0.25em; }
 
-/* line 3, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 3, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .center-block-content {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 8, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 8, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-container .hoverable {
   visibility: hidden; }
-/* line 11, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 11, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-container:hover .hoverable {
   visibility: inherit; }
-/* line 14, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 14, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-container.hoverable-show .hoverable {
   visibility: visible; }
-/* line 17, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 17, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-container.hoverable-show:hover .hoverable {
   visibility: visible; }
-/* line 20, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 20, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-container.hoverable-hide .hoverable {
   visibility: hidden; }
-/* line 23, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 23, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-container.hoverable-hide:hover .hoverable {
   visibility: hidden; }
 
-/* line 26, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 26, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-button-show {
   visibility: visible; }
 
-/* line 29, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 29, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .hoverable-button-hide {
   visibility: hidden; }
 
-/* line 32, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 32, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .clickable-block {
   cursor: pointer; }
 
-/* line 35, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 35, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .no-margins {
   margin: 0; }
 
-/* line 38, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 38, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 hr.small {
   margin: 1em 0; }
 
-/* line 41, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 41, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 hr.mini {
   margin: 0.5em 0; }
 
-/* line 44, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 44, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 hr.light {
   border-color: #f6f6f6; }
 
-/* line 47, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 47, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 hr.no-shadow {
   border-bottom: 0; }
 
-/* line 50, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 50, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 53, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 53, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .user-select-none {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
 
-/* line 57, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 57, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .no-margin-top {
   margin-top: 0; }
 
-/* line 57, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 57, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .no-margin-bottom {
   margin-bottom: 0; }
 
-/* line 57, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 57, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .no-margin-right {
   margin-right: 0; }
 
-/* line 57, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 57, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .no-margin-left {
   margin-left: 0; }
 
-/* line 62, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 62, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .block-link {
   display: block;
   width: 100%;
   text-align: center; }
 
-/* line 67, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
+/* line 67, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/utilities/utils */
 .tooltip {
   font-weight: normal; }
 
@@ -5409,7 +5409,7 @@ button.close {
 
 /* === Compass, FontAwesome === */
 /* === Kiosk === */
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
 .kiosklanding-navbar {
   width: 100%;
   padding: 15px 0;
@@ -5417,21 +5417,21 @@ button.close {
   top: 0;
   left: 0;
   z-index: 10; }
-  /* line 9, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
+  /* line 9, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
   .kiosklanding-navbar .navbar-text {
     font-size: 15px;
     color: #333333; }
-    /* line 12, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
+    /* line 12, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
     .kiosklanding-navbar .navbar-text .text-muted {
       color: #a8a3a3; }
-    /* line 14, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
+    /* line 14, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
     .kiosklanding-navbar .navbar-text a {
       color: inherit; }
-  /* line 17, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
+  /* line 17, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
   .kiosklanding-navbar .kiosklanding-auth-button {
     margin: 6px 0; }
 
-/* line 20, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
+/* line 20, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/navbar */
 .kiosklanding-navbar-logo {
   width: 73px;
   height: 15px;
@@ -5443,18 +5443,18 @@ button.close {
       background-image: url("/assets/landing/images//logo@2x.png");
       background-size: 73px 15px; } }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/buttons */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/buttons */
 .kiosklanding-auth-button {
   padding: 10px 20px;
   background-color: transparent;
   border-color: #ccc;
   font-size: 13px; }
-  /* line 6, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/buttons */
+  /* line 6, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/buttons */
   .kiosklanding-auth-button:hover {
     background-color: #ccc;
     color: #000; }
 
-/* line 10, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/buttons */
+/* line 10, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/buttons */
 .kiosklanding-callback-button {
   color: #fff;
   background-color: #ff0036;
@@ -5477,7 +5477,7 @@ button.close {
     color: #ff0036;
     background-color: #fff; }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/browser */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/browser */
 .browser {
   padding-top: 14px;
   background-color: #a9a9a2;
@@ -5485,15 +5485,15 @@ button.close {
   border-radius: 5px;
   box-shadow: 0 0 78px rgba(0, 0, 0, 0.1); }
 
-/* line 8, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/browser */
+/* line 8, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/browser */
 .browser-viewport {
   background-color: #fff;
   overflow: hidden; }
-  /* line 11, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/browser */
+  /* line 11, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/browser */
   .browser-viewport img {
     width: 100%; }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/iphone */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/iphone */
 .iphone {
   width: 134px;
   height: 246px;
@@ -5501,61 +5501,61 @@ button.close {
   overflow: hidden;
   border-radius: 10px; }
 
-/* line 8, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/iphone */
+/* line 8, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/iphone */
 .iphone-screen {
   width: 88%;
   height: 75%;
   margin: 23% auto 0;
   background-color: #fff;
   overflow: hidden; }
-  /* line 14, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/iphone */
+  /* line 14, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/iphone */
   .iphone-screen img {
     width: 100%; }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
 .kiosklanding-hero {
   margin-bottom: 30px;
   position: relative;
   background-color: #f1f1ea; }
-  /* line 5, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+  /* line 5, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
   .kiosklanding-hero > .container {
     padding-top: 84px;
     padding-bottom: 40px;
     position: relative; }
-  /* line 10, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+  /* line 10, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
   .kiosklanding-hero .iphone {
     position: absolute;
     bottom: 22px;
     left: 46px; }
 
-/* line 15, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+/* line 15, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
 .kiosklanding-hero-info {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center; }
 
 @media (min-width: 992px) {
-  /* line 25, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+  /* line 25, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
   .kiosklanding-hero {
     margin-bottom: 106px; }
-    /* line 27, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+    /* line 27, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
     .kiosklanding-hero > .container {
       padding-bottom: 84px; }
-    /* line 29, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+    /* line 29, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
     .kiosklanding-hero .browser {
       margin: 0 60px -148px; }
-  /* line 32, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/hero */
+  /* line 32, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/hero */
   .kiosklanding-hero-info {
     margin-top: 100px;
     margin-left: -34px;
     text-align: left; } }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/sections */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/sections */
 .kiosklanding-section, .kiosklanding-work-steps, .kiosklanding-callback {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 6, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/sections */
+/* line 6, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/sections */
 .kiosklanding-section-title, .kiosklanding-hero-title {
   margin: 0 0 0.8em;
   font-weight: 100;
@@ -5563,19 +5563,19 @@ button.close {
   line-height: 1; }
 
 @media (min-width: 768px) {
-  /* line 13, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/sections */
+  /* line 13, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/sections */
   .kiosklanding-section, .kiosklanding-work-steps, .kiosklanding-callback {
     padding-bottom: 55px; }
-  /* line 16, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/sections */
+  /* line 16, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/sections */
   .kiosklanding-section-title, .kiosklanding-hero-title {
     margin-bottom: 0.6em;
     font-size: 50px; } }
 
-/* line 3, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+/* line 3, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
 .kiosklanding-hero + .kiosklanding-work-steps {
   padding-top: 0; }
 
-/* line 6, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+/* line 6, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
 .kiosklanding-work-steps-timeline {
   position: absolute;
   width: 1px;
@@ -5585,7 +5585,7 @@ button.close {
   bottom: 18px;
   background-color: #d2d1d1; }
 
-/* line 15, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+/* line 15, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
 .kiosklanding-work-steps-timeline-start {
   width: 130px;
   margin-bottom: 18px;
@@ -5599,40 +5599,40 @@ button.close {
   color: #a1a1a1;
   text-align: center; }
 
-/* line 29, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+/* line 29, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
 .kiosklanding-work-step {
   position: relative;
   clear: both; }
-  /* line 32, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 32, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step + .kiosklanding-work-step {
     margin-top: 55px; }
-  /* line 34, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 34, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step img {
     max-width: 100%; }
-  /* line 36, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 36, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step h3 {
     font-size: 24px;
     line-height: 26px; }
-  /* line 39, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 39, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step p {
     font-size: 14px;
     line-height: 16px; }
-  /* line 43, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 43, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step.pull-left .kiosklanding-work-step-marker {
     margin-left: -7px;
     left: 100%; }
-  /* line 46, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 46, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step.pull-left .kiosklanding-work-step-marker-text {
     margin-left: -28px; }
-  /* line 49, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 49, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step.pull-right .kiosklanding-work-step-marker {
     margin-right: -8px;
     right: 100%; }
-  /* line 52, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 52, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step.pull-right .kiosklanding-work-step-marker-text {
     margin-left: 26px; }
 
-/* line 56, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+/* line 56, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
 .kiosklanding-work-step-marker {
   width: 15px;
   height: 15px;
@@ -5644,7 +5644,7 @@ button.close {
   background-color: #fff;
   border-radius: 50%; }
 
-/* line 67, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+/* line 67, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
 .kiosklanding-work-step-marker-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5666,27 +5666,27 @@ button.close {
           transform: rotate(-90deg); }
 
 @media (min-width: 768px) {
-  /* line 83, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 83, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-step + .kiosklanding-work-step {
     margin-top: -135px; }
-  /* line 87, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
+  /* line 87, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/work-steps */
   .kiosklanding-work-steps-timeline, .kiosklanding-work-step-marker {
     display: block; } }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback */
 .kiosklanding-callback {
   border-top: 1px solid #eeeeee; }
 
 @media (min-width: 768px) {
-  /* line 6, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback */
+  /* line 6, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback */
   .kiosklanding-callback {
     border-top: none; } }
 
-/* line 1, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-send, .kiosklanding-callback-form-success, .kiosklanding-callback-form-error {
   margin: 1em 0; }
 
-/* line 6, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 6, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-form {
   width: 100%;
   max-width: 360px;
@@ -5700,7 +5700,7 @@ button.close {
   .kiosklanding-callback-form-form:after {
     clear: both; }
 
-/* line 13, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 13, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-input {
   padding: 17px 16px;
   width: 100%;
@@ -5709,7 +5709,7 @@ button.close {
   border-radius: 2px;
   color: #fff; }
 
-/* line 21, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 21, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-open-button {
   color: #fff;
   background-color: #ff0036;
@@ -5732,7 +5732,7 @@ button.close {
     color: #ff0036;
     background-color: #fff; }
 
-/* line 25, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 25, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-submit-button {
   color: #ff0036;
   background-color: #fff;
@@ -5760,10 +5760,10 @@ button.close {
     color: #fff;
     background-color: #ff0036; }
 
-/* line 38, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 38, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-success {
   color: #5cb85c; }
 
-/* line 42, /Users/sergeylaptev/Desktop/brandymint/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
+/* line 42, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/callback-form */
 .kiosklanding-callback-form-error {
   color: #ff0036; }
