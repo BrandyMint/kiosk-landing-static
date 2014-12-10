@@ -74,5 +74,16 @@ module.exports = {
         outputName: 'bundle.min.css'
       }
     }
+    htmls: {
+      src: src + '/haml/*.haml'
+      replace:
+        js: 'scripts/bundle.js'
+        css: 'stylesheets/bundle.css'
+      dest: dist
+    }
+    assets: {
+      src: src + '/assets/**/*.{ttf,woff,eof,eot,svg,jpg,png,gif}'
+      dest: dist + '/assets'
+    }
   }
 }
