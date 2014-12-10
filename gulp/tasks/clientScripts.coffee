@@ -23,6 +23,7 @@ gulp.task 'clientScripts', ->
     .external 'fancybox'
     .external 'fancybox.wannabe'
     .external 'accounting'
+    .external 'lodash'
 
   bundle = ->
     bundleLogger.start config.outputName

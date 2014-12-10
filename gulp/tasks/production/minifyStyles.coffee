@@ -1,8 +1,8 @@
 gulp         = require 'gulp'
 rename       = require 'gulp-rename'
 minifyCSS    = require 'gulp-minify-css'
-handleErrors = require '../util/handleErrors'
-config       = require('../config').production.styles.minify
+handleErrors = require '../../util/handleErrors'
+config       = require('../../config').production.styles.minify
 
 gulp.task 'minifyStyles', ['styles'], ->
   gulp.src config.src

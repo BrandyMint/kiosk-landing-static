@@ -2,8 +2,8 @@ gulp         = require 'gulp'
 sass         = require 'gulp-sass'
 autoprefixer = require 'gulp-autoprefixer'
 rename       = require 'gulp-rename'
-handleErrors = require '../util/handleErrors'
-config       = require('../config').production.styles.bundle
+handleErrors = require '../../util/handleErrors'
+config       = require('../../config').production.styles.bundle
 
 gulp.task 'styles', ->
   gulp.src config.src

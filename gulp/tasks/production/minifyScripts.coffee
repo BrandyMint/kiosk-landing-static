@@ -1,8 +1,8 @@
 gulp         = require 'gulp'
 uglify       = require 'gulp-uglify'
 rename       = require 'gulp-rename'
-handleErrors = require '../util/handleErrors'
-config       = require('../config').production.scripts.minify
+handleErrors = require '../../util/handleErrors'
+config       = require('../../config').production.scripts.minify
 
 gulp.task 'minifyScripts', ['scripts'], ->
   gulp.src config.src
