@@ -6,15 +6,15 @@
 /* === Kiosk === */
 @font-face {
   font-family: 'Museo Sans Cyrillic';
-  src: url('/assets/museosanscyrl_100.eot');
-  src: url('/assets/museosanscyrl_100.eot?#iefix') format('embedded-opentype'), url('/assets/museosanscyrl_100.woff2') format('woff2'), url('/assets/museosanscyrl_100.woff') format('woff'), url('/assets/museosanscyrl_100.ttf') format('truetype'), url('/assets/museosanscyrl_100.svg#museo_sans_cyrl100') format('svg');
+  src: url('/assets/landing/fonts//museosanscyrl_100.eot');
+  src: url('/assets/landing/fonts//museosanscyrl_100.eot?#iefix') format('embedded-opentype'), url('/assets/landing/fonts//museosanscyrl_100.woff2') format('woff2'), url('/assets/landing/fonts//museosanscyrl_100.woff') format('woff'), url('/assets/landing/fonts//museosanscyrl_100.ttf') format('truetype'), url('/assets/landing/fonts//museosanscyrl_100.svg#museo_sans_cyrl100') format('svg');
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Museo Sans Cyrillic';
-  src: url('/assets/museosanscyrl_300.eot');
-  src: url('/assets/museosanscyrl_300.eot?#iefix') format('embedded-opentype'), url('/assets/museosanscyrl_300.woff2') format('woff2'), url('/assets/museosanscyrl_300.woff') format('woff'), url('/assets/museosanscyrl_300.ttf') format('truetype'), url('/assets/museosanscyrl_300.svg#museo_sans_cyrl300') format('svg');
+  src: url('/assets/landing/fonts//museosanscyrl_300.eot');
+  src: url('/assets/landing/fonts//museosanscyrl_300.eot?#iefix') format('embedded-opentype'), url('/assets/landing/fonts//museosanscyrl_300.woff2') format('woff2'), url('/assets/landing/fonts//museosanscyrl_300.woff') format('woff'), url('/assets/landing/fonts//museosanscyrl_300.ttf') format('truetype'), url('/assets/landing/fonts//museosanscyrl_300.svg#museo_sans_cyrl300') format('svg');
   font-weight: 300;
   font-style: normal; }
 
@@ -5435,12 +5435,12 @@ button.close {
 .kiosklanding-navbar-logo {
   width: 73px;
   height: 15px;
-  background-image: url("/assets/logo.png");
+  background-image: url("/assets/landing/images//logo.png");
   display: inline-block;
   vertical-align: middle; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-navbar-logo {
-      background-image: url("/assets/logo@2x.png");
+      background-image: url("/assets/landing/images//logo@2x.png");
       background-size: 73px 15px; } }
 
 /* line 1, /home/danil/code/kiosk-landing-static/app/stylesheets/sass/modules/buttons */

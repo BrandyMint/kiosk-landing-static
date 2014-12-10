@@ -77,7 +77,8 @@ KEYCODE_ENTER = 13;
 CallbackForm_Mixin = {
   _sendData: function(phoneNumber) {
     return $.ajax({
-      url: this.props.url,
+      url: this.props.postUrl,
+      method: 'POST',
       data: {
         phoneNumber: phoneNumber
       },
@@ -115,7 +116,7 @@ CallbackForm_Mixin = {
 window.CallbackForm = React.createClass({displayName: 'CallbackForm',
   mixins: [CallbackForm_Mixin],
   propTypes: {
-    url: React.PropTypes.string.isRequired
+    postUrl: React.PropTypes.string.isRequired
   },
   getInitialState: function() {
     return {

@@ -23,7 +23,8 @@ KEYCODE_ENTER          = 13
 CallbackForm_Mixin =
   _sendData: (phoneNumber) ->
     $.ajax
-      url: @props.url
+      url: @props.postUrl
+      method: 'POST'
       data:
         phoneNumber: phoneNumber
       beforeSend: => @setState(currentState: SEND_STATE) if @isMounted()
@@ -35,7 +36,7 @@ window.CallbackForm = React.createClass
   mixins: [CallbackForm_Mixin]
 
   propTypes:
-    url: React.PropTypes.string.isRequired
+    postUrl: React.PropTypes.string.isRequired
 
   getInitialState: -> currentState: SHOW_STATE
 
