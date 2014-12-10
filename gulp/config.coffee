@@ -77,8 +77,8 @@ module.exports = {
     htmls: {
       src: src + '/haml/*.haml'
       replace:
-        js: 'scripts/bundle.js'
-        css: 'stylesheets/bundle.css'
+        js: 'assets/landing/scripts/bundle.js'
+        css: 'assets/landing/stylesheets/bundle.css'
       dest: dist
     }
     assets: {
