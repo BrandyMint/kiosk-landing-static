@@ -11,5 +11,5 @@ gulp.task 'htmls', ->
       basepath: '@file'
     ))
     .pipe haml()
-    .pipe htmlreplace config.replace
+    .pipe htmlreplace config.replace, keepUnassigned: true
     .pipe gulp.dest config.dest
