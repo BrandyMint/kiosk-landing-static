@@ -30,7 +30,10 @@ module.exports = {
       }
     }
     haml: {
-      src: 'app/haml/**/*.haml'
+      src: src + '/haml/*.haml'
+      replace:
+        js: 'assets/landing/scripts/bundle.js'
+        counters: ''
       dest: build
     }
     sass: {
