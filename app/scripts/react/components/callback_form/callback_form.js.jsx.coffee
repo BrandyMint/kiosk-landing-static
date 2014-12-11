@@ -153,6 +153,6 @@ window.CallbackForm_Error = React.createClass
 
   render: ->
     return `<div className='kiosklanding-callback-form-error-wrap'>
-              <h2 className='kiosklanding-callback-form-error'>{ERROR_MESSAGE}</h2>
+              <div className='kiosklanding-callback-form-error'>{ERROR_MESSAGE}</div>
               <CallbackForm_OpenButton onClick={ this.props.onClick } />
             </div>`

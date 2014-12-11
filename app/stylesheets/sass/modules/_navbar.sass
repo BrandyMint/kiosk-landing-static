@@ -5,21 +5,32 @@
   top: 0
   left: 0
   z-index: $zindex-kiosklanding-navbar
-
+  a
+    color: inherit
+  .navbar-brand
+    margin-left: -$navbar-padding-horizontal
+    .kiosklanding-navbar-logo
+      position: relative
+      top: 2px
+      vertical-align: top
   .navbar-text
-    font-size: 15px
+    font-size: 14px
     color: $text-color
     .text-muted
       color: #a8a3a3
-    a
-      color: inherit
-
   .kiosklanding-auth-button
-    margin: 6px 0
+    margin: 6px 0 6px $navbar-padding-horizontal
 
 .kiosklanding-navbar-logo
+  @include img-retina("#{$images-path}/logo.png", "#{$images-path}/logo@2x.png", 73px, 15px)
   width: 73px
   height: 15px
-  @include img-retina("#{$images-path}/logo.png", "#{$images-path}/logo@2x.png", 73px, 15px)
   display: inline-block
   vertical-align: middle
+
+@media (min-width: $screen-sm-min)
+  .kiosklanding-navbar
+    .kiosklanding-auth-button
+      margin-left: 0
+    .navbar-text
+      font-size: 16px
