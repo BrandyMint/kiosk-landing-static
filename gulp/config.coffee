@@ -32,7 +32,6 @@ module.exports = {
     haml: {
       src: src + '/haml/*.haml'
       replace:
-        js: 'assets/landing/scripts/bundle.js'
         counters: ''
       dest: build
     }
