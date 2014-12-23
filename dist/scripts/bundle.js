@@ -2582,7 +2582,7 @@ ERROR_STATE = 'error';
 
 OPEN_BUTTON_FULL_TEXT = 'Оставьте свой телефон и мы вам перезвоним';
 
-OPEN_BUTTON_SHORT_TEXT = 'Перезвоните мне';
+OPEN_BUTTON_SHORT_TEXT = 'Оставьте телефон';
 
 SUBMIT_BUTTON_TEXT = 'Отпр.';
 
