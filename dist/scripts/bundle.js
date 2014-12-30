@@ -2770,7 +2770,7 @@ window.CallbackForm_Send = React.createClass({displayName: 'CallbackForm_Send',
 
 window.CallbackForm_Success = React.createClass({displayName: 'CallbackForm_Success',
   render: function() {
-    return React.DOM.h2({className: "kiosklanding-callback-form-success"}, SUCCESS_MESSAGE);
+    return React.DOM.div({className: "kiosklanding-callback-form-success"}, SUCCESS_MESSAGE);
   }
 });
 

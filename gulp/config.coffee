@@ -40,6 +40,19 @@ module.exports = {
       dest: build + '/stylesheets'
       outputName: 'local.css'
     }
+    uncss: {
+      src: build + '/stylesheets/local.css'
+      dest: build + '/stylesheets'
+      htmls: build + '/*.html'
+      ignore: [
+        /kiosklanding/
+        /input/
+        /button/
+        /btn/
+        /hidden/
+      ]
+      outputName: 'local.css'
+    }
     fonts: {
       src: src + '/**/*.{ttf,woff,eof,eot,svg}'
       dest: build + '/fonts'
@@ -68,6 +81,19 @@ module.exports = {
       bundle: {
         src: src + '/stylesheets/dist.scss'
         dest: dist + '/stylesheets'
+        outputName: 'bundle.css'
+      }
+      uncss: {
+        src: dist + '/stylesheets/bundle.css'
+        dest: dist + '/stylesheets'
+        htmls: dist + '/*.html'
+        ignore: [
+          /kiosklanding/
+          /input/
+          /button/
+          /btn/
+          /hidden/
+        ]
         outputName: 'bundle.css'
       }
       minify: {

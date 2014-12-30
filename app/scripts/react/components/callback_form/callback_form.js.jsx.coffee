@@ -144,7 +144,7 @@ window.CallbackForm_Send = React.createClass
 
 window.CallbackForm_Success = React.createClass
   render: ->
-    return `<h2 className='kiosklanding-callback-form-success'>{SUCCESS_MESSAGE}</h2>`
+    return `<div className='kiosklanding-callback-form-success'>{SUCCESS_MESSAGE}</div>`
 
 
 window.CallbackForm_Error = React.createClass
