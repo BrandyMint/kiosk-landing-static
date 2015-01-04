@@ -5,10 +5,10 @@ runSequence = require 'run-sequence'
 requireDir './gulp/tasks', { recurse: true }
 
 gulp.task 'dist', ['clean'], ->
-  gulp.start 'minifyScripts', 'minifyStyles', 'htmls', 'assets'
+  gulp.start 'minifyScripts', 'minifyStyles', 'assets'
 
 gulp.task 'build', ['clean'], (cb) ->
-  runSequence ['vendorScripts', 'clientScripts', 'haml', 'sass', 'fonts', 'images'], cb
+  runSequence ['vendorScripts', 'clientScripts', 'uncss', 'fonts', 'images'], cb
 
 gulp.task 'server', ['build'], ->
   gulp.start 'watch'
