@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+%html
+  %head
+    +include 'app/haml/shared/_head_v2.haml'
+
+  %body.kiosklanding-page
+    %header.navbar.kiosklanding-navbar.kiosklanding-navbar-inverse.kiosklanding-navbar-center
+      .container-fluid
+        %a.navbar-brand{href: '#'}
+          %span.kiosklanding-navbar-logo
+        %div.navbar-rightbox.pull-right
+          %a.btn.navbar-btn.kiosklanding-auth-button{href: '/login'}
+            Вход для магазинов
+    %main.kiosklanding-main
+      .kiosklanding-promo
+        .container
+          .row
+            .col-md-8.col-md-offset-2
+              %h1.kiosklanding-promo-title != 'Создай собственный <span class="text-nowrap">интернет-магазин</span> бесплатно'
+        .kiosklanding-promo-examples
+          .kiosklanding-promo-examples-list
+            .kiosklanding-promo-example>
+              %a.kiosklanding-promo-example-link{href: 'http://www.wanna-be.ru', title: 'wanna-be.ru', target: '_blank'}
+                .browser
+                  .browser-viewport
+                    %img{src: 'assets/landing/images/promo-examples/wanna-be.jpg', alt: 'wanna-be.ru'}
+                %h6.kiosklanding-promo-example-title
+                  wanna-be.ru
+            .kiosklanding-promo-example>
+              %a.kiosklanding-promo-example-link{href: 'http://www.etc.kiiiosk.ru', title: 'etc.kiiiosk.ru', target: '_blank'}
+                .browser
+                  .browser-viewport
+                    %img{src: 'assets/landing/images/promo-examples/etc.jpg', alt: 'etc.kiiiosk.ru'}
+                %h6.kiosklanding-promo-example-title
+                  etc.kiiiosk.ru
+            .kiosklanding-promo-example>
+              %a.kiosklanding-promo-example-link{href: 'http://www.naturallab.ru', title: 'naturallab.ru', target: '_blank'}
+                .browser
+                  .browser-viewport
+                    %img{src: 'assets/landing/images/promo-examples/naturallab.jpg', alt: 'naturallab.ru'}
+                %h6.kiosklanding-promo-example-title
+                  naturallab.ru
+            .kiosklanding-promo-example>
+              %a.kiosklanding-promo-example-link{href: 'http://www.idealistbooks.ru', title: 'idealistbooks.ru', target: '_blank'}
+                .browser
+                  .browser-viewport
+                    %img{src: 'assets/landing/images/promo-examples/idealistbooks.jpg', alt: 'idealistbooks.ru'}
+                %h6.kiosklanding-promo-example-title
+                  idealistbooks.ru
+      .kiosklanding-features
+        .container
+          .row.kiosklanding-features-list
+            .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0.col-md-3.kiosklanding-feature
+              .kiosklanding-feature-figure
+                .kiosklanding-feature-icon-design
+              %h3
+                Простая настройка дизайна
+            .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0.col-md-3.kiosklanding-feature
+              .kiosklanding-feature-figure
+                .kiosklanding-feature-icon-cards
+              %h3
+                Быстрое подключение приема платежей
+            .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0.col-md-3.kiosklanding-feature
+              .kiosklanding-feature-figure
+                .kiosklanding-feature-icon-mobile
+              %h3
+                Удобная покупка с мобильного
+            .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0.col-md-3.kiosklanding-feature
+              .kiosklanding-feature-figure
+                .kiosklanding-feature-icon-orders
+              %h3 != 'Умная работа с<br /> заказами'
+          .row
+            .col-md-6.col-md-offset-3.text-center != 'А так же: размещение на собственном домене, интеграция с сервисом <a href="http://www.moysklad.ru/" title="moysklad.ru" target="_blank">moysklad.ru</a>, выгрузка товаров в группу вконтакте, вывод потока фотографий из инстаграм и многое другое'
+      .kiosklanding-start
+        .container.text-center
+          .row
+            .col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+              %h2.kiosklanding-section-title != 'Мы знаем, как запускать успешные <span class="text-nowrap">интернет-магазины</span>'
+              .kiosklanding-callback-form-container{data: {'react-class': 'CallbackForm', 'react-props': '{"postUrl": "/api/v1/user_requests/"}'}}
+              %p != '<span class="text-nowrap">или звоните  – 8 (800) 77-55-661</span>,</span> <span class="text-nowrap">пишите – <a href="mailto:support@kiiiosk.ru" title="support@kiiiosk.ru">support@kiiiosk.ru</a></span>'
+    %footer.kiosklanding-footer
+      .container
+        %ul.kiosklanding-socials
+          %li.kiosklanding-social
+            %a.kiosklanding-social-link{href: 'https://www.facebook.com/kiiiosk.ru', title: 'Facebook', target: '_blank'}
+              %i.kiosklanding-social-icon.kiosklanding-social-icon-facebook>
+              %span Facebook
+            .fb-like{data: {href: 'https://www.facebook.com/kiiiosk.ru', layout: 'button_count', action: 'like', 'show-faces': false, share: 'false'}
+          %li.kiosklanding-social
+            %a.kiosklanding-social-link{href: 'https://instagram.com/kiiiosk/', title: 'Instagram', target: '_blank'}
+              %i.kiosklanding-social-icon.kiosklanding-social-icon-instagram>
+              %span Instagram
+          %li.kiosklanding-social
+            %a.kiosklanding-social-link{href: 'https://vk.com/kiiiosk', title: 'Вконтакте', target: '_blank'}
+              %i.kiosklanding-social-icon.kiosklanding-social-icon-vkontakte>
+              %span Вконтакте
+          %li.kiosklanding-social
+            %a.kiosklanding-social-link{href: 'https://twitter.com/@kiiiosk_ru', title: 'Twitter', target: '_blank'}
+              %i.kiosklanding-social-icon.kiosklanding-social-icon-twitter>
+              %span Twitter
+
+    / build:js
+    %script{src: 'scripts/vendor.js'}
+    %script{src: 'scripts/client.js'}
+    / endbuild
+    / build:counters
+    +include 'app/haml/shared/_google_analytics.html'
+    +include 'app/haml/shared/_yandex_metrica.html'
+    / endbuild
+    //+include 'app/haml/shared/_jivosite.html'
+    +include 'app/haml/shared/_facebook_likes.html'
