@@ -23,16 +23,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Museo Sans Cyrillic';
+  src: url('/assets/landing/fonts//museosanscyrl_700.eot');
+  src: url('/assets/landing/fonts//museosanscyrl_700.eot?#iefix') format('embedded-opentype'), url('/assets/landing/fonts//museosanscyrl_700.woff2') format('woff2'), url('/assets/landing/fonts//museosanscyrl_700.woff') format('woff'), url('/assets/landing/fonts//museosanscyrl_700.ttf') format('truetype'), url('/assets/landing/fonts//museosanscyrl_700.svg#museo_sans_cyrl700') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   font-weight: 300;
-}
-
-.hoverable-button-show {
-  visibility: visible;
-}
-
-.hoverable-button-hide {
-  visibility: hidden;
 }
 
 /* === Bootstrap === */
@@ -69,9 +69,24 @@ a:hover {
   outline: 0;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
 }
 
 img {
@@ -394,6 +409,8 @@ ol {
 }
 
 .col-md-3,
+.col-md-4,
+.col-lg-4,
 .col-lg-5,
 .col-sm-6,
 .col-md-6,
@@ -448,6 +465,7 @@ ol {
 
 @media (min-width: 992px) {
   .col-md-3,
+  .col-md-4,
   .col-md-6,
   .col-md-8,
   .col-md-10 {
@@ -456,6 +474,10 @@ ol {
 
   .col-md-3 {
     width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33333%;
   }
 
   .col-md-6 {
@@ -481,13 +503,22 @@ ol {
   .col-md-offset-3 {
     margin-left: 25%;
   }
+
+  .col-md-offset-4 {
+    margin-left: 33.33333%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .col-lg-4,
   .col-lg-5,
   .col-lg-7,
   .col-lg-8 {
     float: left;
+  }
+
+  .col-lg-4 {
+    width: 33.33333%;
   }
 
   .col-lg-5 {
@@ -3123,6 +3154,10 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   padding-bottom: 40px;
 }
 
+.kiosklanding-features-text {
+  margin-bottom: 0;
+}
+
 .kiosklanding-features-list {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -3228,8 +3263,147 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   }
 }
 
-.kiosklanding-start {
+.kiosklanding-tariffs {
   background-color: #eee;
+}
+
+.kiosklanding-tariffs > .container {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.kiosklanding-tariffs .kiosklanding-section-title,
+.kiosklanding-tariffs .kiosklanding-hero-title,
+.kiosklanding-tariffs .kiosklanding-promo-title {
+  margin-bottom: 1em;
+}
+
+.kiosklanding-tariffs-text {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.kiosklanding-tariff {
+  margin-bottom: 36px;
+  padding: 26px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.kiosklanding-tariff-1 {
+  border-top: 6px solid #ade9cd;
+}
+
+.kiosklanding-tariff-2 {
+  border-top: 6px solid #6ed9a8;
+}
+
+.kiosklanding-tariff-3 {
+  border-top: 6px solid #31c983;
+}
+
+.kiosklanding-tariff-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.kiosklanding-tariff-price {
+  margin-bottom: 16px;
+  font-weight: 100;
+  font-size: 34px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.kiosklanding-tariff-price sup {
+  top: 0.1em;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.kiosklanding-tariff-price sup.before {
+  margin-right: -100%;
+  position: relative;
+  float: left;
+  left: -18px;
+}
+
+.kiosklanding-tariff-price sup.after {
+  margin-left: -6px;
+}
+
+.kiosklanding-tariff-commission {
+  margin: 0 0 1.2em;
+  padding-left: 26px;
+  position: relative;
+  line-height: 1.571em;
+  background-image: url("/assets/landing/images//tariffs/card.png");
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .kiosklanding-tariff-commission {
+    background-image: url("/assets/landing/images//tariffs/card@2x.png");
+    background-size: 17px 11px;
+  }
+}
+
+.kiosklanding-tariff-features {
+  margin: 0;
+  padding: 0;
+  line-height: 1.571em;
+  list-style-type: none;
+}
+
+.kiosklanding-tariff-features li {
+  padding: 0 0 4px 26px;
+  position: relative;
+  background-image: url("/assets/landing/images//tariffs/tick.png");
+  background-position: 2px 6px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .kiosklanding-tariff-features li {
+    background-image: url("/assets/landing/images//tariffs/tick@2x.png");
+    background-size: 14px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kiosklanding-tariff {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .kiosklanding-tariff-title,
+  .kiosklanding-tariff-price {
+    margin-bottom: 30px;
+  }
+
+  .kiosklanding-tariff-price {
+    font-size: 64px;
+  }
+
+  .kiosklanding-tariff-price sup {
+    top: 0.4em;
+  }
+
+  .kiosklanding-tariff-price sup.before {
+    left: -24px;
+  }
+
+  .kiosklanding-tariff-commission,
+  .kiosklanding-tariff-features {
+    margin-right: -6px;
+    margin-left: 26px;
+  }
 }
 
 .kiosklanding-start a {

@@ -1,0 +1,94 @@
+.kiosklanding-tariffs
+  background-color: #eee
+  & > .container
+    padding:
+      top: 50px
+      bottom: 25px
+  .kiosklanding-section-title
+    margin-bottom: 1em
+
+.kiosklanding-tariffs-text
+  margin-bottom: 0
+  font-size: 15px
+
+.kiosklanding-tariff
+  margin-bottom: 36px
+  padding: 26px
+  border: 1px solid #e5e5e5
+  background-color: #fff
+  border-radius: 5px
+
+.kiosklanding-tariff-1
+  border-top: 6px solid #ade9cd
+.kiosklanding-tariff-2
+  border-top: 6px solid #6ed9a8
+.kiosklanding-tariff-3
+  border-top: 6px solid #31c983
+
+.kiosklanding-tariff-title
+  margin:
+    top: 0
+    bottom: 16px
+  font-weight: 300
+  font-size: 22px
+  line-height: 24px
+
+.kiosklanding-tariff-price
+  margin-bottom: 16px
+  font-weight: 100
+  font-size: 34px
+  line-height: 1
+  white-space: nowrap
+  sup
+    top: .1em
+    font-size: 16px
+    line-height: 1
+    vertical-align: top
+    &.before
+      margin-right: -100%
+      position: relative
+      float: left
+      left: -18px
+    &.after
+      margin-left: -6px
+
+.kiosklanding-tariff-commission
+  margin: 0 0 1.2em
+  padding-left: 26px
+  position: relative
+  line-height: 1.571em
+  @include img-retina("#{$images-path}/tariffs/card.png", "#{$images-path}/tariffs/card@2x.png", 17px, 11px)
+  background-position: 0 5px
+  background-repeat: no-repeat
+
+.kiosklanding-tariff-features
+  margin: 0
+  padding: 0
+  line-height: 1.571em
+  list-style-type: none
+  li
+    padding: 0 0 4px 26px
+    position: relative
+    @include img-retina("#{$images-path}/tariffs/tick.png", "#{$images-path}/tariffs/tick@2x.png", 14px, 10px)
+    background-position: 2px 6px
+    background-repeat: no-repeat
+
+@media (min-width: $screen-sm-min)
+  .kiosklanding-tariff
+    padding:
+      right: 40px
+      left: 40px
+  .kiosklanding-tariff-title,
+  .kiosklanding-tariff-price
+    margin-bottom: 30px
+  .kiosklanding-tariff-price
+    font-size: 64px
+    sup
+      top: .4em
+      &.before
+        left: -24px
+  .kiosklanding-tariff-commission,
+  .kiosklanding-tariff-features
+    margin:
+      right: -6px
+      left: 26px
