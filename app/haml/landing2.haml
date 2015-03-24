@@ -6,7 +6,7 @@
   %body.kiosklanding-page
     %header.navbar.kiosklanding-navbar.kiosklanding-navbar-inverse.kiosklanding-navbar-center
       .container-fluid
-        %a.navbar-brand{href: '#'}
+        %span.navbar-brand
           %span.kiosklanding-navbar-logo
         %div.navbar-rightbox.pull-right
           %a.btn.navbar-btn.kiosklanding-auth-button{href: '/login'}
@@ -70,7 +70,61 @@
                 .kiosklanding-feature-icon-orders
               %h3 != 'Умная работа с<br /> заказами'
           .row
-            .col-md-6.col-md-offset-3.text-center != 'А так же: размещение на собственном домене, интеграция с сервисом <a href="http://www.moysklad.ru/" title="moysklad.ru" target="_blank">moysklad.ru</a>, выгрузка товаров в группу вконтакте, вывод потока фотографий из инстаграм и многое другое'
+            %p.col-md-6.col-md-offset-3.text-center.kiosklanding-features-text != 'А так же: размещение на собственном домене, интеграция с сервисом <a href="http://www.moysklad.ru/" title="moysklad.ru" target="_blank">moysklad.ru</a>, выгрузка товаров в группу вконтакте, вывод потока фотографий из инстаграм и многое другое'
+      .kiosklanding-tariffs
+        .container
+          %h2.kiosklanding-section-title.text-center Сколько стоит Киоск?
+          .row
+            .col-sm-6.col-lg-4
+              .kiosklanding-tariff.kiosklanding-tariff-1
+                %h3.kiosklanding-tariff-title Тариф «простой»
+                .kiosklanding-tariff-price != '0 <sup class="after">руб/мес</sup>'
+                .kiosklanding-tariff-commission != 'Комиссия платежной системы<br /> 6% – для частных лиц<br /> 5% – для юридических лиц'
+                %ul.kiosklanding-tariff-features
+                  %li До 1000 товаров
+                  %li Прием банковских карт
+                  %li Работа с заказами
+                  %li Интеграция с moysklad.ru
+                  %li Собственный домен
+                  %li Инстаграм-лента на сайте
+                  %li Интеграция с вконтакте
+            .col-sm-6.col-lg-4
+              .kiosklanding-tariff.kiosklanding-tariff-2
+                %h3.kiosklanding-tariff-title Тариф «все включено»
+                .kiosklanding-tariff-price != '15 000 <sup class="after">руб/мес</sup>'
+                .kiosklanding-tariff-commission != 'Комиссия платежной системы<br /> 5% – для частных лиц<br /> 3% – для юридических лиц'
+                %ul.kiosklanding-tariff-features
+                  %li До 1000 товаров
+                  %li Прием банковских карт
+                  %li Работа с заказами
+                  %li Интеграция с moysklad.ru
+                  %li Собственный домен
+                  %li Инстаграм-лента на сайте
+                  %li Интеграция с вконтакте
+                  %li
+                    %strong До 15-ти часов программиста для&nbsp;индивидуальной разработки
+            .col-sm-6.col-lg-4
+              .kiosklanding-tariff.kiosklanding-tariff-3
+                %h3.kiosklanding-tariff-title Тариф «лакшери»
+                .kiosklanding-tariff-price != '<sup class="before">от</sup> 50 000 <sup class="after">руб/мес</sup>'
+                .kiosklanding-tariff-commission != 'Комиссия платежной системы<br /> 2,5% – для юридических лиц '
+                %ul.kiosklanding-tariff-features
+                  %li До 1000 товаров
+                  %li Прием банковских карт
+                  %li Работа с заказами
+                  %li Интеграция с moysklad.ru
+                  %li Собственный домен
+                  %li Инстаграм-лента на сайте
+                  %li Интеграция с вконтакте
+                  %li
+                    %strong До 70-ти часов программиста для&nbsp;индивидуальной разработки
+                  %li
+                    %strong Консультации по любым вопросам, связанным с&nbsp;магазином
+                  %li
+                    %strong Приоритетная поддержка 24/7
+          .row
+            %p.col-md-4.col-md-offset-4.text-center.kiosklanding-tariffs-text
+              Во все тарифные планы включают консультации по первичной настройке и&nbsp;запуску магазина.
       .kiosklanding-start
         .container.text-center
           .row

@@ -20,10 +20,6 @@
 @import "settings/mixins";
 @import "settings/zindexes";
 
-// Utilities
-@import "utilities/utils";
-@import "utilities/responsive";
-
 /* === Bootstrap === */
 // Reset and dependencies
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
@@ -86,6 +82,7 @@
 @import "modules/callback-form";
 @import "modules/promo";
 @import "modules/features";
+@import "modules/tariffs";
 @import "modules/start";
 @import "modules/footer";
 @import "modules/socials";
