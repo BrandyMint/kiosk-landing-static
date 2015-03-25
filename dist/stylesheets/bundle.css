@@ -2370,6 +2370,10 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 }
 
 @media (max-width: 1199px) {
+  .kiosklanding-promo .kiosklanding-callback-form-container {
+    margin-bottom: 30px;
+  }
+
   .kiosklanding-promo-examples-list {
     width: 1086px;
     margin-left: -543px;
