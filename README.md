@@ -1,12 +1,12 @@
 Установка и настройка
 ---------------------
 
-    > ./install
+    > ./utils/install
 
 Запуск
 ------
 
-    > ./start       # gulp watch
+    > ./utils/start       # gulp watch
 
 Дальше открываем браузер http://localhost:9000
 
@@ -33,6 +33,8 @@ http://livereload.com/ в помощь!
 с помощью gulp-sass (node-sass, libsass).
 3. Сторонние пакеты устанавливаются через bundle в `app/bower_components` и билдятся в `./scripts/vendor.js`
 
+* https://github.com/qwales1/gulp-assetpaths
+* https://github.com/VFK/gulp-html-replace
 
 Ограничение по браузерам:
 ------------------------
