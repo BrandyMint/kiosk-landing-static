@@ -110,7 +110,10 @@ module.exports = {
       dest: dist
     }
     assets: {
-      src: src + '/assets/**/*.*'
+      src: [
+        src + '/fonts/**/*.*'
+        src + '/images/**/*.*'
+      ]
       dest: './dist'
     }
   }
