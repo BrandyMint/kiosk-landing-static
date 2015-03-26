@@ -111,10 +111,10 @@ module.exports = {
     }
     assets: {
       src: [
-        src + '/fonts/**/*.*'
-        src + '/images/**/*.*'
+        src + '/landing/**/*.*'
+        src + '/landing/**/*.*'
       ]
-      dest: './dist'
+      dest: './dist/landing/'
     }
   }
 }
