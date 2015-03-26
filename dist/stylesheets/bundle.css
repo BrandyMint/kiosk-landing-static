@@ -2187,6 +2187,7 @@ button.close {
 .kiosklanding-callback-form-input {
   padding: 17px 16px;
   width: 100%;
+  color: #333333;
   border: 1px solid #f1f1ea;
   background-color: #fff;
   border-radius: 2px;
@@ -2359,7 +2360,6 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   margin-top: 20px;
   font-weight: 300;
   opacity: 0.5;
-  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
