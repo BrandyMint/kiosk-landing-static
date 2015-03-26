@@ -105,8 +105,8 @@ module.exports = {
     htmls: {
       src: src + '/haml/*.haml'
       replace:
-        js:  'assets/landing/bundle.min.js'
-        css: 'assets/landing/bundle.min.css'
+        js:  'landing/bundle.min.js'
+        css: 'landing/bundle.min.css'
       dest: dist
     }
     assets: {
