@@ -1,6 +1,6 @@
 src   = './app'
 build = './build'
-dist  = './dist'
+dist  = './dist/landing'
 
 module.exports = {
   clean: {
@@ -68,24 +68,24 @@ module.exports = {
         baseDir: src
         entries: './scripts/bundle.coffee'
         extensions: ['.coffee', '.js.jsx.coffee']
-        dest: dist + '/scripts/'
+        dest: dist
         outputName: 'bundle.js'
       }
       minify: {
-        src: dist + '/scripts/bundle.js'
-        dest: dist + '/scripts'
+        src: dist + '/bundle.js'
+        dest: dist
         outputName: 'bundle.min.js'
       }
     }
     styles: {
       bundle: {
         src: src + '/stylesheets/dist.scss'
-        dest: dist + '/stylesheets'
+        dest: dist
         outputName: 'bundle.css'
       }
       uncss: {
-        src: dist + '/stylesheets/bundle.css'
-        dest: dist + '/stylesheets'
+        src: dist + '/bundle.css'
+        dest: dist
         htmls: dist + '/*.html'
         ignore: [
           /kiosklanding/
@@ -97,21 +97,21 @@ module.exports = {
         outputName: 'bundle.css'
       }
       minify: {
-        src: dist + '/stylesheets/bundle.css'
-        dest: dist + '/stylesheets'
+        src: dist + '/bundle.css'
+        dest: dist
         outputName: 'bundle.min.css'
       }
     }
     htmls: {
       src: src + '/haml/*.haml'
       replace:
-        js: 'assets/landing/scripts/bundle.js'
-        css: 'assets/landing/stylesheets/bundle.css'
+        js:  'assets/landing/bundle.min.js'
+        css: 'assets/landing/bundle.min.css'
       dest: dist
     }
     assets: {
       src: src + '/assets/**/*.*'
-      dest: dist + '/assets'
+      dest: './dist'
     }
   }
 }
