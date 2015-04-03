@@ -69,24 +69,13 @@ a:hover {
   outline: 0;
 }
 
-strong {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
+small {
+  font-size: 80%;
 }
 
 img {
@@ -319,6 +308,10 @@ p {
   margin: 0 0 10px;
 }
 
+small {
+  font-size: 85%;
+}
+
 .text-right {
   text-align: right;
 }
@@ -409,11 +402,10 @@ ol {
 }
 
 .col-md-3,
-.col-md-4,
-.col-lg-4,
 .col-lg-5,
 .col-sm-6,
 .col-md-6,
+.col-lg-6,
 .col-lg-7,
 .col-md-8,
 .col-lg-8,
@@ -461,11 +453,14 @@ ol {
   .col-sm-offset-0 {
     margin-left: 0%;
   }
+
+  .col-sm-offset-1 {
+    margin-left: 8.33333%;
+  }
 }
 
 @media (min-width: 992px) {
   .col-md-3,
-  .col-md-4,
   .col-md-6,
   .col-md-8,
   .col-md-10 {
@@ -474,10 +469,6 @@ ol {
 
   .col-md-3 {
     width: 25%;
-  }
-
-  .col-md-4 {
-    width: 33.33333%;
   }
 
   .col-md-6 {
@@ -503,26 +494,22 @@ ol {
   .col-md-offset-3 {
     margin-left: 25%;
   }
-
-  .col-md-offset-4 {
-    margin-left: 33.33333%;
-  }
 }
 
 @media (min-width: 1200px) {
-  .col-lg-4,
   .col-lg-5,
+  .col-lg-6,
   .col-lg-7,
   .col-lg-8 {
     float: left;
   }
 
-  .col-lg-4 {
-    width: 33.33333%;
-  }
-
   .col-lg-5 {
     width: 41.66667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
   }
 
   .col-lg-7 {
@@ -535,6 +522,10 @@ ol {
 
   .col-lg-offset-2 {
     margin-left: 16.66667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
   }
 }
 
@@ -3408,6 +3399,105 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   .kiosklanding-tariff-features {
     margin-right: -6px;
     margin-left: 26px;
+  }
+}
+
+.kiosklanding-pricing {
+  background-color: #eee;
+}
+
+.kiosklanding-pricing > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.kiosklanding-pricing .kiosklanding-section-title,
+.kiosklanding-pricing .kiosklanding-hero-title,
+.kiosklanding-pricing .kiosklanding-promo-title {
+  margin-bottom: 1em;
+}
+
+.kiosklanding-pricing-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.kiosklanding-pricing-free {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.kiosklanding-pricing-commission {
+  margin: 0 0 1.2em;
+  padding-left: 26px;
+  position: relative;
+  font-size: 17px;
+  line-height: 1.571em;
+  background-image: url("/landing/images/tariffs/card.png");
+  background-position: 0 8px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .kiosklanding-pricing-commission {
+    background-image: url("/landing/images/tariffs/card@2x.png");
+    background-size: 17px 11px;
+  }
+}
+
+.kiosklanding-pricing-features {
+  margin: 0 0 1.2em;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1.571em;
+  list-style-type: none;
+}
+
+.kiosklanding-pricing-features li {
+  padding: 0 0 4px 26px;
+  position: relative;
+  background-image: url("/landing/images/tariffs/tick.png");
+  background-position: 2px 8px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .kiosklanding-pricing-features li {
+    background-image: url("/landing/images/tariffs/tick@2x.png");
+    background-size: 14px 10px;
+  }
+}
+
+.kiosklanding-pricing-footnote {
+  padding-left: 26px;
+}
+
+.kiosklanding-pricing-footnote .star {
+  margin-right: -100%;
+  margin-left: -1em;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .kiosklanding-pricing-free {
+    margin-bottom: 60px;
+    font-size: 112px;
+  }
+
+  .kiosklanding-pricing-commission,
+  .kiosklanding-pricing-features {
+    margin-left: -26px;
+  }
+
+  .kiosklanding-pricing-footnote {
+    padding-left: 0;
   }
 }
 
