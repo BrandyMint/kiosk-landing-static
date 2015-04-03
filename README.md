@@ -78,4 +78,19 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support
 
 * Firefox 3.6+, IE10+, and Opera 12+.
 
-test
+## Деплой
+Сначала внести изменения в репозиторий, потом:
+
+        bundle install
+
+# production:
+
+    bundle exec cap production deploy
+
+# staging
+
+    bundle exec cap staging deploy
+
+Если надо выложить не master, то перед bundle указать:
+
+    BRANCH=branchname

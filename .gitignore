@@ -16,3 +16,4 @@ www
 .tmp
 *.bak
 .idea
+.capistrano/*
