@@ -94,3 +94,7 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support
 Если надо выложить не master, то перед bundle указать:
 
     BRANCH=branchname
+
+# Откат:
+    
+    bundle exec cap production deploy:rollback
