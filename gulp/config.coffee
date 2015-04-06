@@ -1,6 +1,6 @@
 src   = './app'
 build = './build'
-dist  = './dist/landing'
+dist  = './dist'
 
 module.exports = {
   clean: {
@@ -103,10 +103,15 @@ module.exports = {
       }
     }
     htmls: {
-      src: src + '/haml/*.haml'
+      src: src + '/haml/landing2.haml'
       replace:
-        js:  'landing/bundle.min.js'
-        css: 'landing/bundle.min.css'
+        js:  'bundle.min.js'
+        css: 'bundle.min.css'
+      replacePath:
+        images:
+          str: /landing\//g,
+          newStr: ''
+      outputName: 'index.html'
       dest: dist
     }
     assets: {
@@ -114,7 +119,7 @@ module.exports = {
         src + '/landing/**/*.*'
         src + '/landing/**/*.*'
       ]
-      dest: './dist/landing/'
+      dest: dist
     }
   }
 }
