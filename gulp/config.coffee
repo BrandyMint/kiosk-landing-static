@@ -54,12 +54,16 @@ module.exports = {
       outputName: 'local.css'
     }
     fonts: {
-      src: src + '/**/*.{ttf,woff,eof,eot,svg}'
+      src: src + '/**/*.{ttf,woff,woff2,eof,eot,svg}'
       dest: build + '/fonts'
     }
     images: {
       src: src + '/images/**/*'
       dest: build + '/images'
+    }
+    favicons: {
+      src: src + '/landing/favicons/**/*'
+      dest: build + '/favicons'
     }
   }
   production: {

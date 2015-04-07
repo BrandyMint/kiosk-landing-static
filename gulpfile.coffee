@@ -8,7 +8,7 @@ gulp.task 'dist', ['clean'], ->
   gulp.start 'minifyScripts', 'minifyStyles', 'assets'
 
 gulp.task 'build', ['clean'], (cb) ->
-  runSequence ['vendorScripts', 'clientScripts', 'uncss', 'fonts', 'images'], cb
+  runSequence ['vendorScripts', 'clientScripts', 'uncss', 'fonts', 'images', 'favicons'], cb
 
 gulp.task 'server', ['build'], ->
   gulp.start 'watch'
