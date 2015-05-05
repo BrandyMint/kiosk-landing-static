@@ -2256,7 +2256,6 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   margin-top: 20px;
   font-weight: 300;
   opacity: 0.5;
-  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
