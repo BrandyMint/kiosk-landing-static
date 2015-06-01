@@ -18,6 +18,7 @@ gulp.task 'vendorScripts', ->
     .require './eventEmitter/EventEmitter',                            { expose: 'eventEmitter' }
     .require './accounting.js/accounting',                             { expose: 'accounting' }
     .require './lodash/dist/lodash',                                   { expose: 'lodash' }
+    .require './owl.carousel/dist/owl.carousel',                       { expose: 'owlCarousel2'}
 
   bundle = ->
     bundleLogger.start config.outputName

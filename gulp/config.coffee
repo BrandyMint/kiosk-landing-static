@@ -50,6 +50,7 @@ module.exports = {
         /button/
         /btn/
         /hidden/
+        /owl/
       ]
       outputName: 'local.css'
     }
@@ -97,6 +98,7 @@ module.exports = {
           /button/
           /btn/
           /hidden/
+          /owl/
         ]
         outputName: 'bundle.css'
       }

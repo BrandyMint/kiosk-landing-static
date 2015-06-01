@@ -8,6 +8,7 @@ window.accounting        = require 'accounting'
 
 # Others
 require('react-mixin-manager')(window.React)
+require 'owlCarousel2'
 
 window.accounting.settings =
   currency:

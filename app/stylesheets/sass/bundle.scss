@@ -70,6 +70,16 @@
 /* === Compass, FontAwesome === */
 @import "compass-mixins/lib/compass/typography/links/link-colors";
 
+/* === OwlCarousel2 === */
+@import "owl.carousel/src/scss/owl.theme.default.scss";
+@import "owl.carousel/src/scss/_mixins.scss";
+@import "owl.carousel/src/scss/_theme.scss";
+@import "owl.carousel/src/scss/owl.animate.scss";
+@import "owl.carousel/src/scss/owl.autoheight.scss";
+@import "owl.carousel/src/scss/owl.carousel.scss";
+@import "owl.carousel/src/scss/owl.lazyload.scss";
+@import "owl.carousel/src/scss/owl.video.scss";
+
 /* === Kiosk === */
 @import "modules/navbar";
 @import "modules/buttons";

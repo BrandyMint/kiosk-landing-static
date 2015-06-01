@@ -12,15 +12,22 @@
   @extend .kiosklanding-section-title
 
 .kiosklanding-promo-examples
+  padding:
+    top: 40px
+    bottom: 40px
   position: relative
   white-space: nowrap
   overflow: hidden
 
+.kiosklanding-promo-examples-box
+  width: 1448px
+  display: inline-block
+  overflow: hidden
+  box-sizing: content-box
+
 .kiosklanding-promo-examples-list
-  margin: 0 -100px
-  padding:
-    top: 40px
-    bottom: 40px
+  transform: translate(0, 0);
+  animation: promo-examples-slide 80s 1s linear infinite;
 
 .kiosklanding-promo-example
   margin: 0 10px
@@ -45,8 +52,10 @@
 .kiosklanding-promo-example-title
   margin-top: 20px
   font-weight: 300
+  color: inherit
   opacity: .5
   transition: opacity .3s ease
+  backface-visibility: hidden
 
 @media (min-width: $screen-sm-min)
   .kiosklanding-promo-title
@@ -56,292 +65,21 @@
   .kiosklanding-promo
     .kiosklanding-callback-form-container
       margin-bottom: 30px
-  .kiosklanding-promo-examples-list
-    width: 1086px
-    margin-left: -543px
+
+  .kiosklanding-promo-examples-box
+    width: 1280px
     padding:
       top: 10px
       bottom: 10px
-    position: relative
-    left: 50%
-    overflow: hidden
-
-@media (max-width: $screen-sm-max)
-  .kiosklanding-promo-examples-list
-    width: 810px
-    margin-left: -405px
 
   .kiosklanding-promo-example
-    margin:
-      right: 5px
-      left: 5px
-    .browser
-      width: 260px
-      height: 285px
-
-@media (max-width: $screen-xs-max)
-  .kiosklanding-promo-examples-list
-    width: 100%
-    height: 368px
-    margin-left: 0
-    padding-bottom: 0
-    position: relative
-    left: auto
-
-  .kiosklanding-promo-example
-    margin:
-      right: 0
-      left: -150px
-    position: absolute
-    top: 0
-    left: 50%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
     .browser
       width: 300px
-      height: 330px
-    &:first-child
-      opacity: 1
-      visibility: visible
-    &:nth-child(1)
-      animation: first-promo-example 20s linear infinite;
-    &:nth-child(2)
-      animation: second-promo-example 20s linear infinite;
-    &:nth-child(3)
-      animation: third-promo-example 20s linear infinite;
-    &:nth-child(4)
-      animation: fourth-promo-example 20s linear infinite;
+      height: 344px
 
 
-@keyframes first-promo-example
+@keyframes promo-examples-slide
   0%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  1%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  20%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  25%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  26%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  45%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  50%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  51%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  70%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  75%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  76%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  95%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  96%
-    opacity: 0
-    visibility: visible
-    z-index: 2
+    transform: translate(0, 0);
   100%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-
-@keyframes second-promo-example
-  0%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  1%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  20%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  21%
-    opacity: 0
-    visibility: visible
-    z-index: 2
-  25%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  26%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  45%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  50%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  51%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  70%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  75%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  76%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  95%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  100%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-
-@keyframes third-promo-example
-  0%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  1%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  20%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  25%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  26%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  45%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  46%
-    opacity: 0
-    visibility: visible
-    z-index: 2
-  50%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  51%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  70%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  75%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  76%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  95%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  100%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-
-@keyframes fourth-promo-example
-  0%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  1%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  20%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  25%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  26%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  45%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  50%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  51%
-    opacity: 0
-    visibility: hidden
-    z-index: 1
-  70%
-    opacity: 0
-    visibility: visible
-    z-index: 1
-  71%
-    opacity: 0
-    visibility: visible
-    z-index: 2
-  75%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  76%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  95%
-    opacity: 1
-    visibility: visible
-    z-index: 2
-  100%
-    opacity: 0
-    visibility: visible
-    z-index: 1
+    transform: translate(-225%, 0);

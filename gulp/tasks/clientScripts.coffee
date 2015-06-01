@@ -12,18 +12,14 @@ gulp.task 'clientScripts', ->
     entries: config.entries
     extensions: config.extensions
   }).external 'jquery'
-    .external 'jquery.role'
-    .external 'jquery.mmenu'
     .external 'bootstrapSass'
     .external 'react'
     .external 'react-mixin-manager'
     .external 'reactUjs'
     .external 'eventEmitter'
-    .external 'owlCarousel'
-    .external 'fancybox'
-    .external 'fancybox.wannabe'
     .external 'accounting'
     .external 'lodash'
+    .external 'owlCarousel2'
 
   bundle = ->
     bundleLogger.start config.outputName

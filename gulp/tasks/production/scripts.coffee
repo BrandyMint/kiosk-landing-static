@@ -19,6 +19,7 @@ gulp.task 'scripts', ->
     .require './bower_components/eventEmitter/EventEmitter',                            { expose: 'eventEmitter' }
     .require './bower_components/accounting.js/accounting',                             { expose: 'accounting' }
     .require './bower_components/lodash/dist/lodash',                                   { expose: 'lodash' }
+    .require './bower_components/owl.carousel/dist/owl.carousel',                       { expose: 'owlCarousel2'}
 
   bundle = ->
     bundleLogger.start config.outputName
