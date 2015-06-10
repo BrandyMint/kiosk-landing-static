@@ -13,7 +13,8 @@ $('[ks-owl-carousel2]').owlCarousel({
   autoWidth: true,
   dots: false,
   autoplay: true,
-  autoplaySpeed: 1400
+  autoplayTimeout: 2500,
+  autoplaySpeed: 1000
 });
 
 
