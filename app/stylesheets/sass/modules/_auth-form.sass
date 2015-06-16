@@ -1,0 +1,32 @@
+.kiosklanding-auth-form
+  .form-group
+    margin-bottom: -1px
+    &:first-of-type
+      .form-control
+        border-top-right-radius: 2px
+        border-top-left-radius: 2px
+    &:last-of-type
+      & + .btn
+        border-top-right-radius: 0
+        border-top-left-radius: 0
+
+  .form-control
+    @include placeholder(#aeaeae)
+    height: 46px
+    padding: 12px 14px
+    font-size: 15px
+    box-shadow: none
+    border-radius: 0
+    &:focus
+      position: relative
+
+  .btn
+    @extend .btn-success
+    @extend .btn-block
+    padding: 12px 14px
+    border-color: transparent
+    font-size: 15px
+    &:hover,
+    &:active
+      border-color: transparent
+      background-color: #62bf62
