@@ -945,7 +945,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success,
-.kiosklanding-request-button,
+.kiosklanding-reg-button,
 .kiosklanding-auth-form .btn {
   color: #fff;
   background-color: #5cb85c;
@@ -953,19 +953,19 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success:hover,
-.kiosklanding-request-button:hover,
+.kiosklanding-reg-button:hover,
 .kiosklanding-auth-form .btn:hover,
 .btn-success:focus,
-.kiosklanding-request-button:focus,
+.kiosklanding-reg-button:focus,
 .kiosklanding-auth-form .btn:focus,
 .btn-success:active,
-.kiosklanding-request-button:active,
+.kiosklanding-reg-button:active,
 .kiosklanding-auth-form .btn:active,
 .btn-success.active,
-.active.kiosklanding-request-button,
+.active.kiosklanding-reg-button,
 .kiosklanding-auth-form .active.btn,
 .open > .btn-success.dropdown-toggle,
-.open > .dropdown-toggle.kiosklanding-request-button,
+.open > .dropdown-toggle.kiosklanding-reg-button,
 .open > .kiosklanding-auth-form .dropdown-toggle.btn,
 .kiosklanding-auth-form .open > .dropdown-toggle.btn {
   color: #fff;
@@ -974,66 +974,66 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success:active,
-.kiosklanding-request-button:active,
+.kiosklanding-reg-button:active,
 .kiosklanding-auth-form .btn:active,
 .btn-success.active,
-.active.kiosklanding-request-button,
+.active.kiosklanding-reg-button,
 .kiosklanding-auth-form .active.btn,
 .open > .btn-success.dropdown-toggle,
-.open > .dropdown-toggle.kiosklanding-request-button,
+.open > .dropdown-toggle.kiosklanding-reg-button,
 .open > .kiosklanding-auth-form .dropdown-toggle.btn,
 .kiosklanding-auth-form .open > .dropdown-toggle.btn {
   background-image: none;
 }
 
 .btn-success.disabled,
-.disabled.kiosklanding-request-button,
+.disabled.kiosklanding-reg-button,
 .kiosklanding-auth-form .disabled.btn,
 .btn-success.disabled:hover,
-.disabled.kiosklanding-request-button:hover,
+.disabled.kiosklanding-reg-button:hover,
 .kiosklanding-auth-form .disabled.btn:hover,
 .btn-success.disabled:focus,
-.disabled.kiosklanding-request-button:focus,
+.disabled.kiosklanding-reg-button:focus,
 .kiosklanding-auth-form .disabled.btn:focus,
 .btn-success.disabled:active,
-.disabled.kiosklanding-request-button:active,
+.disabled.kiosklanding-reg-button:active,
 .kiosklanding-auth-form .disabled.btn:active,
 .btn-success.disabled.active,
-.disabled.active.kiosklanding-request-button,
+.disabled.active.kiosklanding-reg-button,
 .kiosklanding-auth-form .disabled.active.btn,
 .btn-success[disabled],
-[disabled].kiosklanding-request-button,
+[disabled].kiosklanding-reg-button,
 .kiosklanding-auth-form [disabled].btn,
 .btn-success[disabled]:hover,
-[disabled].kiosklanding-request-button:hover,
+[disabled].kiosklanding-reg-button:hover,
 .kiosklanding-auth-form [disabled].btn:hover,
 .btn-success[disabled]:focus,
-[disabled].kiosklanding-request-button:focus,
+[disabled].kiosklanding-reg-button:focus,
 .kiosklanding-auth-form [disabled].btn:focus,
 .btn-success[disabled]:active,
-[disabled].kiosklanding-request-button:active,
+[disabled].kiosklanding-reg-button:active,
 .kiosklanding-auth-form [disabled].btn:active,
 .btn-success[disabled].active,
-[disabled].active.kiosklanding-request-button,
+[disabled].active.kiosklanding-reg-button,
 .kiosklanding-auth-form [disabled].active.btn,
 fieldset[disabled] .btn-success,
-fieldset[disabled] .kiosklanding-request-button,
+fieldset[disabled] .kiosklanding-reg-button,
 fieldset[disabled] .kiosklanding-auth-form .btn,
 .kiosklanding-auth-form fieldset[disabled] .btn,
 fieldset[disabled] .btn-success:hover,
-fieldset[disabled] .kiosklanding-request-button:hover,
+fieldset[disabled] .kiosklanding-reg-button:hover,
 fieldset[disabled] .kiosklanding-auth-form .btn:hover,
 .kiosklanding-auth-form fieldset[disabled] .btn:hover,
 fieldset[disabled] .btn-success:focus,
-fieldset[disabled] .kiosklanding-request-button:focus,
+fieldset[disabled] .kiosklanding-reg-button:focus,
 fieldset[disabled] .kiosklanding-auth-form .btn:focus,
 .kiosklanding-auth-form fieldset[disabled] .btn:focus,
 fieldset[disabled] .btn-success:active,
-fieldset[disabled] .kiosklanding-request-button:active,
+fieldset[disabled] .kiosklanding-reg-button:active,
 fieldset[disabled] .kiosklanding-auth-form .btn:active,
 .kiosklanding-auth-form fieldset[disabled] .btn:active,
 fieldset[disabled] .btn-success.active,
-fieldset[disabled] .active.kiosklanding-request-button,
+fieldset[disabled] .active.kiosklanding-reg-button,
 fieldset[disabled] .kiosklanding-auth-form .active.btn,
 .kiosklanding-auth-form fieldset[disabled] .active.btn {
   background-color: #5cb85c;
@@ -1041,7 +1041,7 @@ fieldset[disabled] .kiosklanding-auth-form .active.btn,
 }
 
 .btn-success .badge,
-.btn-success .kiosklanding-request-button,
+.btn-success .kiosklanding-reg-button,
 .btn-success .kiosklanding-auth-form .btn,
 .kiosklanding-auth-form .btn-success .btn {
   color: #5cb85c;
@@ -2280,14 +2280,14 @@ button.close {
   color: #000;
 }
 
-.kiosklanding-request-button {
+.kiosklanding-reg-button {
   padding: 12px 14px;
   border-color: transparent;
   font-size: 15px;
 }
 
-.kiosklanding-request-button:hover,
-.kiosklanding-request-button:active {
+.kiosklanding-reg-button:hover,
+.kiosklanding-reg-button:active {
   border-color: transparent;
   background-color: #6cbe6a;
 }
@@ -2715,7 +2715,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   text-align: center;
 }
 
-.kiosklanding-promo .kiosklanding-request-button {
+.kiosklanding-promo .kiosklanding-reg-button {
   margin-bottom: 10px;
 }
 
@@ -2806,7 +2806,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 }
 
 @media (min-width: 768px) {
-  .kiosklanding-promo .kiosklanding-request-button {
+  .kiosklanding-promo .kiosklanding-reg-button {
     width: 100%;
     max-width: 260px;
     margin-bottom: 30px;

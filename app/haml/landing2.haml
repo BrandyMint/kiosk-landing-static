@@ -18,7 +18,7 @@
             .col-md-8.col-md-offset-2
               %h1.kiosklanding-promo-title != 'Создай собственный <span class="text-nowrap">интернет-магазин</span> бесплатно'
           -# .kiosklanding-callback-form-container{data: {'react-class': 'CallbackForm', 'react-props': '{"postUrl": "//api.kiiiosk.ru/v1/user_requests/"}'}}
-          %a.btn.kiosklanding-request-button{href: '#kiosklanding-auth-form', title: 'Оставить заявку', ks-scrollto: true} Оставить заявку
+          %a.btn.kiosklanding-reg-button{href: '#kiosklanding-auth-form', title: 'Зарегистрироваться', ks-scrollto: true} Зарегистрироваться
         .kiosklanding-promo-examples
           %div{ks-owl-carousel2: true}
             .kiosklanding-promo-example>
@@ -131,7 +131,7 @@
             .row
               .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
                 %form#new_vendor_registration_form{action: '/registration', method: 'post', accept-charset: 'UTF-8', novalidate: 'novalidate'}
-                  %h2 Оставить заявку
+                  %h2 Регистрация
                   .form-group
                     %input#vendor_registration_form_vendor_name.form-control{name: 'vendor_registration_form[vendor_name]', type: 'text', placeholder: 'Название магазина'}
                   .form-group
