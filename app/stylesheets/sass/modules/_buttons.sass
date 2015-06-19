@@ -9,9 +9,11 @@
     color: #000
 
 .kiosklanding-request-button
-  padding: 10px 14px
-  background-color: #e8e6e6
-  font-size: 13px
-  color: #313131 !important
-  &:hover
-    background-color: darken(#e8e6e6, 5%)
+  @extend .btn-success
+  padding: 12px 14px
+  border-color: transparent
+  font-size: 15px
+  &:hover,
+  &:active
+    border-color: transparent
+    background-color: lighten($brand-success, 4%)

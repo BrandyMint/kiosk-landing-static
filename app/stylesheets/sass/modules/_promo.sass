@@ -5,6 +5,8 @@
   background-color: #313638
   color: #fff
   text-align: center
+  .kiosklanding-request-button
+    margin-bottom: 10px
   .kiosklanding-auth-form
     margin:
       top: 20px
@@ -26,7 +28,6 @@
 .kiosklanding-promo-examples
   padding:
     top: 40px
-    bottom: 40px
   position: relative
   white-space: nowrap
   overflow: hidden
@@ -70,8 +71,15 @@
   backface-visibility: hidden
 
 @media (min-width: $screen-sm-min)
+  .kiosklanding-promo
+    .kiosklanding-request-button
+      width: 100%
+      max-width: 260px
+      margin-bottom: 30px
   .kiosklanding-promo-title
     font-size: 60px
+  .kiosklanding-promo-examples
+    margin-bottom: 20px
 
 @media (max-width: $screen-md-max)
   .kiosklanding-promo

@@ -18,19 +18,7 @@
             .col-md-8.col-md-offset-2
               %h1.kiosklanding-promo-title != 'Создай собственный <span class="text-nowrap">интернет-магазин</span> бесплатно'
           -# .kiosklanding-callback-form-container{data: {'react-class': 'CallbackForm', 'react-props': '{"postUrl": "//api.kiiiosk.ru/v1/user_requests/"}'}}
-          .kiosklanding-auth-form
-            .row
-              .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
-                %form#new_vendor_registration_form{action: '/registration', method: 'post', accept-charset: 'UTF-8', novalidate: 'novalidate'}
-                  .form-group
-                    %input#vendor_registration_form_vendor_name.form-control{name: 'vendor_registration_form[vendor_name]' type: 'text', placeholder: 'Название магазина'}
-                  .form-group
-                    %input#vendor_registration_form_operator_name.form-control{name: 'vendor_registration_form[operator_name]' type: 'text', placeholder: 'Ваше Имя'}
-                  .form-group
-                    %input#vendor_registration_form_phone.form-control{name: 'vendor_registration_form[phone]' type: 'tel', placeholder: 'Номер телефона'}
-                  .form-group
-                    %input#vendor_registration_form_email.form-control{name: 'vendor_registration_form[email]' type: 'email', placeholder: 'E-mail'}
-                  %input.btn{name: 'commit', type: 'submit', value: 'Продолжить'}
+          %a.btn.kiosklanding-request-button{href: '#kiosklanding-auth-form', title: 'Оставить заявку', ks-scrollto: true} Оставить заявку
         .kiosklanding-promo-examples
           %div{ks-owl-carousel2: true}
             .kiosklanding-promo-example>
@@ -139,18 +127,19 @@
             .col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
               %h2.kiosklanding-section-title != 'Мы знаем, как запускать успешные <span class="text-nowrap">интернет-магазины</span>'
               -# .kiosklanding-callback-form-container{data: {'react-class': 'CallbackForm', 'react-props': '{"postUrl": "//api.kiiiosk.ru/v1/user_requests/"}'}}
-          .kiosklanding-auth-form
+          #kiosklanding-auth-form.kiosklanding-auth-form
             .row
               .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
                 %form#new_vendor_registration_form{action: '/registration', method: 'post', accept-charset: 'UTF-8', novalidate: 'novalidate'}
+                  %h2 Оставить заявку
                   .form-group
-                    %input#vendor_registration_form_vendor_name.form-control{name: 'vendor_registration_form[vendor_name]' type: 'text', placeholder: 'Название магазина'}
+                    %input#vendor_registration_form_vendor_name.form-control{name: 'vendor_registration_form[vendor_name]', type: 'text', placeholder: 'Название магазина'}
                   .form-group
-                    %input#vendor_registration_form_operator_name.form-control{name: 'vendor_registration_form[operator_name]' type: 'text', placeholder: 'Ваше Имя'}
+                    %input#vendor_registration_form_operator_name.form-control{name: 'vendor_registration_form[operator_name]', type: 'text', placeholder: 'Ваше Имя'}
                   .form-group
-                    %input#vendor_registration_form_phone.form-control{name: 'vendor_registration_form[phone]' type: 'tel', placeholder: 'Номер телефона'}
+                    %input#vendor_registration_form_phone.form-control{name: 'vendor_registration_form[phone]', type: 'tel', placeholder: 'Номер телефона'}
                   .form-group
-                    %input#vendor_registration_form_email.form-control{name: 'vendor_registration_form[email]' type: 'email', placeholder: 'E-mail'}
+                    %input#vendor_registration_form_email.form-control{name: 'vendor_registration_form[email]', type: 'email', placeholder: 'E-mail'}
                   %input.btn{name: 'commit', type: 'submit', value: 'Продолжить'}
                 -# .row
                 -#   .col-sm-6

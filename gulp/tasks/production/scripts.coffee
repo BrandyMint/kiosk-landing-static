@@ -20,6 +20,7 @@ gulp.task 'scripts', ->
     .require './bower_components/accounting.js/accounting',                             { expose: 'accounting' }
     .require './bower_components/lodash/dist/lodash',                                   { expose: 'lodash' }
     .require './bower_components/owl.carousel/dist/owl.carousel',                       { expose: 'owlCarousel2'}
+    .require './bower_components/jquery.scrollTo/jquery.scrollTo',                      { expose: 'jquery.scrollTo'}
 
   bundle = ->
     bundleLogger.start config.outputName

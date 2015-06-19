@@ -20,6 +20,7 @@ gulp.task 'clientScripts', ->
     .external 'accounting'
     .external 'lodash'
     .external 'owlCarousel2'
+    .external 'jquery.scrollTo'
 
   bundle = ->
     bundleLogger.start config.outputName

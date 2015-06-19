@@ -19,6 +19,7 @@ gulp.task 'vendorScripts', ->
     .require './accounting.js/accounting',                             { expose: 'accounting' }
     .require './lodash/dist/lodash',                                   { expose: 'lodash' }
     .require './owl.carousel/dist/owl.carousel',                       { expose: 'owlCarousel2'}
+    .require './jquery.scrollTo/jquery.scrollTo',                      { expose: 'jquery.scrollTo'}
 
   bundle = ->
     bundleLogger.start config.outputName
