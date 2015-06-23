@@ -18,6 +18,7 @@
 <meta property='fb:admins' content='505229749617787'>
 <!-- end Open Graph -->
 <meta name='w1-verification' content='150006462123'>
+<meta name='csrf-token' content='JSt2PJOxyPyna5Do0Zn48JRyRhbD3Z1PZEkfQh2wPdM'>
 <link rel="stylesheet" href="bundle.min.css">
 <link href='favicons/favicon.ico' rel='shortcut icon'>
 <link href='favicons/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
@@ -226,7 +227,11 @@
           <div class='kiosklanding-auth-form' id='kiosklanding-auth-form'>
             <div class='row'>
               <div class='col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2'>
-                <form id='new_vendor_registration_form' action='/registration' method='post' accept-charset='UTF-8' novalidate='novalidate'>
+                <form id='new_vendor_registration_form' action='http://app.kiiiosk.ru/registration' method='post' accept-charset='UTF-8' novalidate='novalidate'>
+                  <span style='display: none'>
+                    <input type='hidden' name='utf8' value='&#x2713;'>
+                    <input type='hidden' name='authenticity_token' value='JSt2PJOxyPyna5Do0Zn48JRyRhbD3Z1PZEkfQh2wPdM='>
+                  </span>
                   <h2>Регистрация</h2>
                   <div class='form-group'>
                     <input class='form-control' id='vendor_registration_form_vendor_name' name='vendor_registration_form[vendor_name]' type='text' placeholder='Название магазина'>
