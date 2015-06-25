@@ -17,6 +17,11 @@ $('[ks-owl-carousel2]').owlCarousel
 
 $('[ks-scrollto]').click ->
   id = $(@).attr('href')
+  x = $(window).scrollLeft()
+  y = $(window).scrollTop()
+
+  window.location.hash = id
+  window.scrollTo(x, y)
 
   $.scrollTo id, 500,
     onAfter: (e) ->

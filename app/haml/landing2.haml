@@ -17,7 +17,7 @@
           .row
             .col-md-8.col-md-offset-2
               %h1.kiosklanding-promo-title != 'Создай собственный <span class="text-nowrap">интернет-магазин</span> бесплатно'
-          %a.btn.kiosklanding-reg-button{href: '#kiosklanding-auth-form', title: 'Зарегистрироваться', ks-scrollto: true} Зарегистрироваться
+          %a.btn.kiosklanding-reg-button{href: '#registration', title: 'Зарегистрироваться', ks-scrollto: true} Зарегистрироваться
         .kiosklanding-promo-examples
           %div{ks-owl-carousel2: true}
             .kiosklanding-promo-example>
@@ -125,7 +125,7 @@
           .row
             .col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
               %h2.kiosklanding-section-title != 'Мы знаем, как запускать успешные <span class="text-nowrap">интернет-магазины</span>'
-          #kiosklanding-auth-form.kiosklanding-auth-form
+          #registration.kiosklanding-auth-form
             .row
               .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
                 %form#new_vendor_registration_form{action: 'http://app.kiiiosk.ru/registration', method: 'post', accept-charset: 'UTF-8', novalidate: 'novalidate'}
@@ -171,5 +171,5 @@
     +include 'app/haml/shared/_google_analytics.html'
     +include 'app/haml/shared/_yandex_metrica.html'
     / endbuild
-    //+include 'app/haml/shared/_jivosite.html'
+    -# +include 'app/haml/shared/_jivosite.html'
     +include 'app/haml/shared/_facebook_likes.html'

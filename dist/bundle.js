@@ -18,8 +18,12 @@ $('[ks-owl-carousel2]').owlCarousel({
 });
 
 $('[ks-scrollto]').click(function() {
-  var id;
+  var id, x, y;
   id = $(this).attr('href');
+  x = $(window).scrollLeft();
+  y = $(window).scrollTop();
+  window.location.hash = id;
+  window.scrollTo(x, y);
   $.scrollTo(id, 500, {
     onAfter: function(e) {
       return $(e).find('.form-control').eq(0).focus();
