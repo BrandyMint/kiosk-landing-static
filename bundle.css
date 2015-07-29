@@ -3816,8 +3816,8 @@ button.close {
 
 @font-face {
   font-family: 'entypo-plus';
-  src: url('../fonts//entypo-plus.eot?-w0y2sr');
-  src: url('../fonts//entypo-plus.eot?#iefix-w0y2sr') format('embedded-opentype'), url('../fonts//entypo-plus.woff?-w0y2sr') format('woff'), url('../fonts//entypo-plus.ttf?-w0y2sr') format('truetype'), url('../fonts//entypo-plus.svg?-w0y2sr#entypo-plus') format('svg');
+  src: url('fonts//entypo-plus.eot?-w0y2sr');
+  src: url('fonts//entypo-plus.eot?#iefix-w0y2sr') format('embedded-opentype'), url('fonts//entypo-plus.woff?-w0y2sr') format('woff'), url('fonts//entypo-plus.ttf?-w0y2sr') format('truetype'), url('fonts//entypo-plus.svg?-w0y2sr#entypo-plus') format('svg');
   font-weight: normal;
   font-style: normal;
 }
