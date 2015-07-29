@@ -58,9 +58,9 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap/close";
 
 // Components w/ JavaScript
-//@import "bootstrap-sass-official/assets/stylesheets/bootstrap/modals";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/modals";
 //@import "bootstrap-sass-official/assets/stylesheets/bootstrap/tooltip";
-//@import "bootstrap-sass-official/assets/stylesheets/bootstrap/popovers";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/popovers";
 //@import "bootstrap-sass-official/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
@@ -80,6 +80,9 @@
 @import "owl.carousel/src/scss/owl.lazyload.scss";
 @import "owl.carousel/src/scss/owl.video.scss";
 
+/* === Entypo Plus === */
+@import "entypo-plus/scss/entypo-plus";
+
 /* === Kiosk === */
 @import "modules/navbar";
 @import "modules/buttons";
@@ -98,3 +101,5 @@
 @import "modules/start";
 @import "modules/footer";
 @import "modules/socials";
+@import "modules/info-trigger";
+@import "modules/modal-tariffs";

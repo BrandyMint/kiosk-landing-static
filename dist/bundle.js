@@ -32,6 +32,12 @@ $('[ks-scrollto]').click(function() {
   return false;
 });
 
+$('[ks-popover-trigger]').popover({
+  container: 'body',
+  placement: 'top',
+  trigger: 'hover'
+});
+
 
 
 },{"./libs":2,"./react/components/callback_form/callback_form":3,"./routes/routes":4}],2:[function(require,module,exports){
@@ -55,6 +61,8 @@ require('owlCarousel2');
 
 require('jquery.scrollTo');
 
+require('bootstrapSass');
+
 window.accounting.settings = {
   currency: {
     symbol: 'руб.',
@@ -72,7 +80,7 @@ window.accounting.settings = {
 
 
 
-},{"accounting":"accounting","eventEmitter":"eventEmitter","flux":5,"jquery":"jquery","jquery.scrollTo":"jquery.scrollTo","lodash":"lodash","owlCarousel2":"owlCarousel2","react":"react","react-mixin-manager":"react-mixin-manager","reactUjs":"reactUjs"}],3:[function(require,module,exports){
+},{"accounting":"accounting","bootstrapSass":"bootstrapSass","eventEmitter":"eventEmitter","flux":5,"jquery":"jquery","jquery.scrollTo":"jquery.scrollTo","lodash":"lodash","owlCarousel2":"owlCarousel2","react":"react","react-mixin-manager":"react-mixin-manager","reactUjs":"reactUjs"}],3:[function(require,module,exports){
 
 /** @jsx React.DOM */
 var CallbackForm_Mixin, ERROR_MESSAGE, ERROR_STATE, INPUT_PLACEHOLDER, INPUT_STATE, KEYCODE_ENTER, OPEN_BUTTON_FULL_TEXT, OPEN_BUTTON_SHORT_TEXT, SEND_MESSAGE, SEND_STATE, SHOW_STATE, SUBMIT_BUTTON_TEXT, SUCCESS_MESSAGE, SUCCESS_STATE;

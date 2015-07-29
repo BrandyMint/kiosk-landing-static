@@ -51,6 +51,12 @@ module.exports = {
         /btn/
         /hidden/
         /owl/
+        /popover/
+        /modal/
+        /fade/
+        /.\in/
+        /table/
+        /table-responsive/
       ]
       outputName: 'local.css'
     }
@@ -99,6 +105,12 @@ module.exports = {
           /btn/
           /hidden/
           /owl/
+          /popover/
+          /modal/
+          /fade/
+          /.\in/
+          /table/
+          /table-responsive/
         ]
         outputName: 'bundle.css'
       }
@@ -115,7 +127,7 @@ module.exports = {
         css: 'bundle.min.css'
       replacePath:
         images:
-          str: /landing\//g,
+          str: /landing\//g
           newStr: ''
       outputName: 'index.html'
       dest: dist
@@ -126,6 +138,10 @@ module.exports = {
         src + '/landing/**/*.*'
       ]
       dest: dist
+    }
+    fonts: {
+      src: src + '/**/*.{ttf,woff,woff2,eof,eot,svg}'
+      dest: dist + '/fonts'
     }
   }
 }

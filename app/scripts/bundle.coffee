@@ -28,3 +28,8 @@ $('[ks-scrollto]').click ->
       $(e).find('.form-control').eq(0).focus()
 
   false
+
+$('[ks-popover-trigger]').popover
+  container: 'body'
+  placement: 'top'
+  trigger:   'hover'
