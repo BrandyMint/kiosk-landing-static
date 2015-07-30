@@ -2545,21 +2545,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #ec971f;
 }
 
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
-  line-height: 1;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-align: center;
-  background-color: #777777;
-  border-radius: 10px;
-}
-
 .btn .badge {
   position: relative;
   top: -1px;
@@ -4224,21 +4209,10 @@ button.close {
 .kiosklanding-tariffs-button {
   padding: 10px 14px;
   position: relative;
-  background-color: #62b6ff;
-  border-color: #62b6ff;
+  background-color: transparent;
+  border: 2px solid #62b6ff;
   font-size: 13px;
-  color: #fff;
-}
-
-.kiosklanding-tariffs-button:before {
-  content: "";
-  margin-top: -8px;
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  border-top: 8px solid transparent;
-  border-right: 8px solid #62b6ff;
-  border-bottom: 8px solid transparent;
+  color: #62b6ff;
 }
 
 .kiosklanding-tariffs-button:hover,
@@ -4247,17 +4221,6 @@ button.close {
   background-color: #76c2ff;
   border-color: #76c2ff;
   color: #fff;
-}
-
-.kiosklanding-tariffs-button:hover:before,
-.kiosklanding-tariffs-button:active:before,
-.kiosklanding-tariffs-button:focus:before {
-  border-right: 8px solid #76c2ff;
-}
-
-.kiosklanding-tariffs-button .badge {
-  background-color: #fff;
-  color: #62b6ff;
 }
 
 .browser {
@@ -4979,7 +4942,6 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 .kiosklanding-tariff {
   margin-bottom: 36px;
   padding: 26px;
-  border: 1px solid #e5e5e5;
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -4991,11 +4953,9 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 }
 
 .kiosklanding-tariff:hover {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .kiosklanding-tariff dl {
