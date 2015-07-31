@@ -3905,10 +3905,6 @@ button.close {
   content: "\e6a3";
 }
 
-.icon-help-with-circle:before {
-  content: "\e6a5";
-}
-
 .icon-image-inverted:before {
   content: "\e6a9";
 }
@@ -4910,6 +4906,18 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
     padding-top: 80px;
   }
 
+  .kiosklanding-feature:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-top: 24px;
+    display: inline-block;
+    background-color: #555;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
   .kiosklanding-feature-figure {
     margin-top: -80px;
     margin-bottom: -10px;
@@ -4958,42 +4966,6 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   transform: scale(1.04);
 }
 
-.kiosklanding-tariff dl {
-  margin: 0;
-}
-
-.kiosklanding-tariff dl dt,
-.kiosklanding-tariff dl dd {
-  margin-top: 4px;
-  line-height: inherit;
-}
-
-.kiosklanding-tariff dl dt {
-  font-weight: normal;
-}
-
-.kiosklanding-tariff dl dt:first-child {
-  margin-top: 0;
-}
-
-.kiosklanding-tariff dl dd {
-  padding-left: 12px;
-  padding-left: 20px;
-  position: relative;
-}
-
-.kiosklanding-tariff dl dd:before {
-  content: "\b7\a0";
-  content: "\2014";
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.kiosklanding-tariff dl dd:first-child {
-  margin-top: 0;
-}
-
 .kiosklanding-tariff-1 {
   border-top: 6px solid #ade9cd;
 }
@@ -5008,6 +4980,20 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 
 .kiosklanding-tariff-4 {
   border-top: 6px solid #31c983;
+}
+
+.kiosklanding-tariffs-icon-tick {
+  width: 14px;
+  height: 10px;
+  display: inline-block;
+  background-image: url("images/tariffs/tick.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .kiosklanding-tariffs-icon-tick {
+    background-image: url("images/tariffs/tick@2x.png");
+    background-size: 14px 10px;
+  }
 }
 
 .kiosklanding-tariff-title {
@@ -5044,35 +5030,14 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   margin-left: -6px;
 }
 
-.kiosklanding-tariff-commission {
-  margin: 0 0 1.2em;
-  padding-left: 26px;
-  position: relative;
-  line-height: 1.571em;
-  background-image: url("images/tariffs/card.png");
-  background-position: 0 5px;
-  background-repeat: no-repeat;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .kiosklanding-tariff-commission {
-    background-image: url("images/tariffs/card@2x.png");
-    background-size: 17px 11px;
-  }
-}
-
 .kiosklanding-tariff-price + .kiosklanding-tariff-bonus {
-  margin-top: -20px;
-}
-
-.kiosklanding-tariff-bonus {
-  margin-bottom: 30px;
+  margin-top: -8px;
+  margin-bottom: 16px;
 }
 
 .kiosklanding-tariff-bonus-label {
   padding: 0.3em 0.6em;
   display: inline-block;
-  border: 1px solid #f4dab5;
   border: 1px solid #fff8ee;
   background-color: #fff8ee;
   font-weight: 100;
@@ -5118,6 +5083,73 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background: none;
 }
 
+.kiosklanding-tariffs-table-wrapper {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.kiosklanding-tariffs-table {
+  width: 100%;
+  font-size: 12px;
+}
+
+.kiosklanding-tariffs-table th {
+  padding: 30px 15px;
+  font-weight: 100;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.kiosklanding-tariffs-table td {
+  padding: 30px 15px;
+  border-top: 1px solid #f1f1f1;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.kiosklanding-tariffs-table td:first-child {
+  text-align: right;
+  font-size: 12px;
+  color: #777;
+}
+
+.kiosklanding-tariffs-table .kiosklanding-tariff-price {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 1.857em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.kiosklanding-tariffs-table .kiosklanding-tariff-price sup {
+  margin-left: 0;
+  top: 0.1em;
+  font-size: 12px;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.kiosklanding-tariffs-table-subtitle th {
+  font-size: 10px;
+  border-bottom: none;
+  background-color: #f4f4f4;
+  color: #8f8f8f;
+}
+
+@media (max-width: 767px) {
+  .kiosklanding-tariffs-table td:first-child {
+    font-size: 0.857em;
+  }
+}
+
 @media (min-width: 768px) {
   .kiosklanding-tariff {
     padding-right: 40px;
@@ -5140,6 +5172,15 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   .kiosklanding-tariff-price sup.before {
     left: -24px;
   }
+
+  .kiosklanding-tariff-price + .kiosklanding-tariff-bonus {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .kiosklanding-tariffs-table td {
+    min-width: 140px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -5150,10 +5191,6 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 
   .kiosklanding-tariff-title {
     font-size: 1.286em;
-  }
-
-  .kiosklanding-tariff-price {
-    font-size: 3em;
   }
 
   .kiosklanding-tariff-title,
@@ -5168,140 +5205,19 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   .kiosklanding-tariff-price sup {
     top: 0.1em;
   }
-}
 
-.kiosklanding-tariff-sm {
-  padding: 20px;
-  text-align: center;
-}
-
-.kiosklanding-tariff-sm .kiosklanding-tariff-title {
-  font-weight: 100;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.kiosklanding-tariffs-table-wrapper {
-  width: 100%;
-  overflow-y: hidden;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-.kiosklanding-tariffs-icon-tick {
-  width: 14px;
-  height: 10px;
-  display: inline-block;
-  background-image: url("images/tariffs/tick.png");
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .kiosklanding-tariffs-icon-tick {
-    background-image: url("images/tariffs/tick@2x.png");
-    background-size: 14px 10px;
+  .kiosklanding-tariffs-table {
+    font-size: 1em;
   }
-}
 
-.kiosklanding-tariffs-table {
-  width: 100%;
-}
+  .kiosklanding-tariffs-table td {
+    min-width: 198px;
+  }
 
-.kiosklanding-tariffs-table .icon-check,
-.kiosklanding-tariffs-table .icon-cross {
-  font-size: 16px;
-}
-
-.kiosklanding-tariffs-table .icon-check {
-  color: #31c983;
-}
-
-.kiosklanding-tariffs-table .icon-cross {
-  color: #ff0036;
-}
-
-.kiosklanding-tariffs-table th {
-  padding: 30px 15px;
-  font-weight: 100;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-.kiosklanding-tariffs-table td {
-  min-width: 198px;
-  padding: 30px 15px;
-  text-align: center;
-  vertical-align: middle;
-  border-top: 1px solid #f1f1f1;
-}
-
-.kiosklanding-tariffs-table td:first-child {
-  padding-right: 30px;
-  padding-left: 30px;
-  text-align: right;
-  font-size: 12px;
-  color: #777;
-}
-
-.kiosklanding-tariffs-table .kiosklanding-tariff-price {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
-  font-weight: 100;
-  font-size: 26px;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.kiosklanding-tariffs-table .kiosklanding-tariff-price sup {
-  margin-left: 0;
-  top: 0.1em;
-  font-size: 12px;
-  line-height: 1;
-  vertical-align: top;
-}
-
-.kiosklanding-tariff-more {
-  padding-top: 20px;
-}
-
-.kiosklanding-tariff-more a {
-  color: #31c983;
-}
-
-.kiosklanding-tariff-more a:hover {
-  color: #2bb072;
-}
-
-.kiosklanding-tariff-more-button {
-  margin: 20px -26px -26px;
-  padding: 15px 26px;
-  display: block;
-  background-color: #f9f9f9;
-  font-weight: 100;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #8f8f8f;
-  text-align: center;
-  border-radius: 0 0 4px 4px;
-}
-
-.kiosklanding-tariff-more-button:hover,
-.kiosklanding-tariff-more-button:active,
-.kiosklanding-tariff-more-button:focus {
-  text-decoration: none;
-}
-
-.kiosklanding-tariffs-table-subtitle th {
-  font-size: 10px;
-  border-bottom: none;
-  background-color: #f4f4f4;
-  color: #8f8f8f;
+  .kiosklanding-tariffs-table td:first-child {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .kiosklanding-pricing {
@@ -5564,7 +5480,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 }
 
 .kiosklanding-modal-tarrifs .modal-header .close {
-  font-size: 48px;
+  font-size: 28px;
 }
 
 .kiosklanding-modal-tarrifs .modal-body {
@@ -5575,4 +5491,10 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 .kiosklanding-modal-tarrifs .kiosklanding-hero-title,
 .kiosklanding-modal-tarrifs .kiosklanding-promo-title {
   margin-top: 0.6em;
+}
+
+@media (min-width: 768px) {
+  .kiosklanding-modal-tarrifs .modal-header .close {
+    font-size: 48px;
+  }
 }
