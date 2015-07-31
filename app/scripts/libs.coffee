@@ -10,6 +10,7 @@ window.accounting        = require 'accounting'
 require('react-mixin-manager')(window.React)
 require 'owlCarousel2'
 require 'jquery.scrollTo'
+require 'bootstrapSass'
 
 window.accounting.settings =
   currency:
