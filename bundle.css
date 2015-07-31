@@ -4958,6 +4958,8 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   transform: scale(1);
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .kiosklanding-tariff:hover {
