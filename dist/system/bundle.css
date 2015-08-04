@@ -6,22 +6,22 @@
 /* === Kiosk === */
 @font-face {
   font-family: 'Museo Sans Cyrillic';
-  src: url('fonts/museosanscyrl_100.eot');
-  src: url('fonts/museosanscyrl_100.eot?#iefix') format('embedded-opentype'), url('fonts/museosanscyrl_100.woff2') format('woff2'), url('fonts/museosanscyrl_100.woff') format('woff'), url('fonts/museosanscyrl_100.ttf') format('truetype'), url('fonts/museosanscyrl_100.svg#museo_sans_cyrl100') format('svg');
+  src: url('system/fonts/museosanscyrl_100.eot');
+  src: url('system/fonts/museosanscyrl_100.eot?#iefix') format('embedded-opentype'), url('system/fonts/museosanscyrl_100.woff2') format('woff2'), url('system/fonts/museosanscyrl_100.woff') format('woff'), url('system/fonts/museosanscyrl_100.ttf') format('truetype'), url('system/fonts/museosanscyrl_100.svg#museo_sans_cyrl100') format('svg');
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Museo Sans Cyrillic';
-  src: url('fonts/museosanscyrl_300.eot');
-  src: url('fonts/museosanscyrl_300.eot?#iefix') format('embedded-opentype'), url('fonts/museosanscyrl_300.woff2') format('woff2'), url('fonts/museosanscyrl_300.woff') format('woff'), url('fonts/museosanscyrl_300.ttf') format('truetype'), url('fonts/museosanscyrl_300.svg#museo_sans_cyrl300') format('svg');
+  src: url('system/fonts/museosanscyrl_300.eot');
+  src: url('system/fonts/museosanscyrl_300.eot?#iefix') format('embedded-opentype'), url('system/fonts/museosanscyrl_300.woff2') format('woff2'), url('system/fonts/museosanscyrl_300.woff') format('woff'), url('system/fonts/museosanscyrl_300.ttf') format('truetype'), url('system/fonts/museosanscyrl_300.svg#museo_sans_cyrl300') format('svg');
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Museo Sans Cyrillic';
-  src: url('fonts/museosanscyrl_700.eot');
-  src: url('fonts/museosanscyrl_700.eot?#iefix') format('embedded-opentype'), url('fonts/museosanscyrl_700.woff2') format('woff2'), url('fonts/museosanscyrl_700.woff') format('woff'), url('fonts/museosanscyrl_700.ttf') format('truetype'), url('fonts/museosanscyrl_700.svg#museo_sans_cyrl700') format('svg');
+  src: url('system/fonts/museosanscyrl_700.eot');
+  src: url('system/fonts/museosanscyrl_700.eot?#iefix') format('embedded-opentype'), url('system/fonts/museosanscyrl_700.woff2') format('woff2'), url('system/fonts/museosanscyrl_700.woff') format('woff'), url('system/fonts/museosanscyrl_700.ttf') format('truetype'), url('system/fonts/museosanscyrl_700.svg#museo_sans_cyrl700') format('svg');
   font-weight: bold;
   font-style: normal; }
 
@@ -4529,8 +4529,8 @@ button.close {
 /* === Entypo Plus === */
 @font-face {
   font-family: 'entypo-plus';
-  src: url('fonts//entypo-plus.eot?-w0y2sr');
-  src: url('fonts//entypo-plus.eot?#iefix-w0y2sr') format('embedded-opentype'), url('fonts//entypo-plus.woff?-w0y2sr') format('woff'), url('fonts//entypo-plus.ttf?-w0y2sr') format('truetype'), url('fonts//entypo-plus.svg?-w0y2sr#entypo-plus') format('svg');
+  src: url('system/fonts/entypo-plus.eot?-w0y2sr');
+  src: url('system/fonts/entypo-plus.eot?#iefix-w0y2sr') format('embedded-opentype'), url('system/fonts/entypo-plus.woff?-w0y2sr') format('woff'), url('system/fonts/entypo-plus.ttf?-w0y2sr') format('truetype'), url('system/fonts/entypo-plus.svg?-w0y2sr#entypo-plus') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -5773,10 +5773,10 @@ button.close {
 .kiosklanding-navbar-inverse {
   color: #fff; }
   .kiosklanding-navbar-inverse .kiosklanding-navbar-logo {
-    background-image: url("images/logo_white.png"); }
+    background-image: url("system/images/logo_white.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .kiosklanding-navbar-inverse .kiosklanding-navbar-logo {
-        background-image: url("images/logo_white@2x.png");
+        background-image: url("system/images/logo_white@2x.png");
         background-size: 73px 15px; } }
   .kiosklanding-navbar-inverse .kiosklanding-auth-button {
     border-color: #73797d;
@@ -5786,14 +5786,14 @@ button.close {
       background: none; }
 
 .kiosklanding-navbar-logo {
-  background-image: url("images/logo.png");
+  background-image: url("system/images/logo.png");
   width: 73px;
   height: 15px;
   display: inline-block;
   vertical-align: middle; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-navbar-logo {
-      background-image: url("images/logo@2x.png");
+      background-image: url("system/images/logo@2x.png");
       background-size: 73px 15px; } }
 
 @media (min-width: 768px) {
@@ -6260,39 +6260,39 @@ button.close {
   float: left; }
 
 .kiosklanding-feature-icon-design {
-  background-image: url("images/features/design.png");
+  background-image: url("system/images/features/design.png");
   width: 96px;
   height: 110px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-feature-icon-design {
-      background-image: url("images/features/design@2x.png");
+      background-image: url("system/images/features/design@2x.png");
       background-size: 96px 110px; } }
 
 .kiosklanding-feature-icon-cards {
-  background-image: url("images/features/cards.png");
+  background-image: url("system/images/features/cards.png");
   width: 124px;
   height: 89px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-feature-icon-cards {
-      background-image: url("images/features/cards@2x.png");
+      background-image: url("system/images/features/cards@2x.png");
       background-size: 124px 89px; } }
 
 .kiosklanding-feature-icon-mobile {
-  background-image: url("images/features/mobile.png");
+  background-image: url("system/images/features/mobile.png");
   width: 103px;
   height: 108px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-feature-icon-mobile {
-      background-image: url("images/features/mobile@2x.png");
+      background-image: url("system/images/features/mobile@2x.png");
       background-size: 103px 108px; } }
 
 .kiosklanding-feature-icon-orders {
-  background-image: url("images/features/orders.png");
+  background-image: url("system/images/features/orders.png");
   width: 106px;
   height: 94px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-feature-icon-orders {
-      background-image: url("images/features/orders@2x.png");
+      background-image: url("system/images/features/orders@2x.png");
       background-size: 106px 94px; } }
 
 @media (min-width: 768px) {
@@ -6370,10 +6370,10 @@ button.close {
   width: 14px;
   height: 10px;
   display: inline-block;
-  background-image: url("images/tariffs/tick.png"); }
+  background-image: url("system/images/tariffs/tick.png"); }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-tariffs-icon-tick {
-      background-image: url("images/tariffs/tick@2x.png");
+      background-image: url("system/images/tariffs/tick@2x.png");
       background-size: 14px 10px; } }
 
 .kiosklanding-tariff-title {
@@ -6428,12 +6428,12 @@ button.close {
     margin-top: 4px;
     padding: 0 0 0 26px;
     position: relative;
-    background-image: url("images/tariffs/tick.png");
+    background-image: url("system/images/tariffs/tick.png");
     background-position: 2px 6px;
     background-repeat: no-repeat; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .kiosklanding-tariff-features li {
-        background-image: url("images/tariffs/tick@2x.png");
+        background-image: url("system/images/tariffs/tick@2x.png");
         background-size: 14px 10px; } }
   .kiosklanding-tariff-features ul {
     padding-left: 18px;
@@ -6561,12 +6561,12 @@ button.close {
   position: relative;
   font-size: 17px;
   line-height: 1.571em;
-  background-image: url("images/tariffs/card.png");
+  background-image: url("system/images/tariffs/card.png");
   background-position: 0 8px;
   background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-pricing-commission {
-      background-image: url("images/tariffs/card@2x.png");
+      background-image: url("system/images/tariffs/card@2x.png");
       background-size: 17px 11px; } }
 
 .kiosklanding-pricing-features {
@@ -6578,12 +6578,12 @@ button.close {
   .kiosklanding-pricing-features li {
     padding: 0 0 4px 26px;
     position: relative;
-    background-image: url("images/tariffs/tick.png");
+    background-image: url("system/images/tariffs/tick.png");
     background-position: 2px 8px;
     background-repeat: no-repeat; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .kiosklanding-pricing-features li {
-        background-image: url("images/tariffs/tick@2x.png");
+        background-image: url("system/images/tariffs/tick@2x.png");
         background-size: 14px 10px; } }
 
 .kiosklanding-pricing-footnote {
@@ -6662,7 +6662,7 @@ button.close {
     text-decoration: none; }
 
 .kiosklanding-social-icon {
-  background-image: url("images/socials/sprite.png");
+  background-image: url("system/images/socials/sprite.png");
   width: 32px;
   height: 32px;
   margin-right: 10px;
@@ -6671,7 +6671,7 @@ button.close {
   opacity: 0.4; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .kiosklanding-social-icon {
-      background-image: url("images/socials/sprite@2x.png");
+      background-image: url("system/images/socials/sprite@2x.png");
       background-size: 37px 148px; } }
 
 .kiosklanding-social-icon-facebook {
@@ -6756,7 +6756,7 @@ button.close {
   width: 120px;
   height: 23px;
   display: inline-block;
-  background-image: url(images/logo.svg);
+  background-image: url(system/images/logo.svg);
   background-size: 120px auto;
   text-indent: -9999px;
   vertical-align: top;
