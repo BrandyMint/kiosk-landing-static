@@ -1,6 +1,6 @@
 src   = './app'
 build = './build'
-dist  = './dist'
+dist  = './dist/system'
 
 module.exports = {
   clean: {
