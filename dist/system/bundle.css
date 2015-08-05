@@ -6794,6 +6794,8 @@ button.close {
     .auth-form .alert a {
       font-weight: bold;
       color: inherit; }
+  .auth-form .form-note {
+    margin-bottom: 35px; }
   .auth-form .form-title {
     margin-top: 0;
     margin-bottom: 1em;
@@ -6842,6 +6844,9 @@ button.close {
     background-color: #f6584f;
     color: #fff;
     font-size: 0.857em; }
+    .auth-form .has-error .help-block a {
+      font-weight: bold;
+      color: inherit; }
   .auth-form .btn {
     border-radius: 0; }
 
