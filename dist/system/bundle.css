@@ -6801,6 +6801,8 @@ button.close {
     margin-bottom: 1em;
     font-weight: 100;
     line-height: 1.1; }
+    .auth-form .form-title small {
+      font-size: 14px; }
   .auth-form .form-group {
     margin-bottom: -1px; }
   .auth-form .form-group-first .form-control {
