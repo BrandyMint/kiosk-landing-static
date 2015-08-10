@@ -12,6 +12,37 @@ require('./react/components/callback_form/callback_form');
 
 window.ReactUjs.initialize();
 
+$(function() {
+  $('[ks-owl-carousel2]').owlCarousel({
+    loop: true,
+    center: true,
+    autoWidth: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplaySpeed: 1000
+  });
+  $('[ks-scrollto]').click(function() {
+    var id, x, y;
+    id = $(this).attr('href');
+    x = $(window).scrollLeft();
+    y = $(window).scrollTop();
+    window.location.hash = id;
+    window.scrollTo(x, y);
+    $.scrollTo(id, 500, {
+      onAfter: function(e) {
+        return $(e).find('.form-control').eq(0).focus();
+      }
+    });
+    return false;
+  });
+  return $('[ks-popover-trigger]').popover({
+    container: 'body',
+    placement: 'top',
+    trigger: 'hover'
+  });
+});
+
 
 
 },{"./libs":3,"./react/components/callback_form/callback_form":4,"./routes/routes":5}],3:[function(require,module,exports){
@@ -31,6 +62,12 @@ window.accounting = require('accounting');
 
 require('react-mixin-manager')(window.React);
 
+require('owlCarousel2');
+
+require('jquery.scrollTo');
+
+require('bootstrapSass');
+
 window.accounting.settings = {
   currency: {
     symbol: 'руб.',
@@ -48,7 +85,7 @@ window.accounting.settings = {
 
 
 
-},{"accounting":"accounting","eventEmitter":"eventEmitter","flux":6,"jquery":"jquery","lodash":"lodash","react":"react","react-mixin-manager":"react-mixin-manager","reactUjs":"reactUjs"}],4:[function(require,module,exports){
+},{"accounting":"accounting","bootstrapSass":"bootstrapSass","eventEmitter":"eventEmitter","flux":6,"jquery":"jquery","jquery.scrollTo":"jquery.scrollTo","lodash":"lodash","owlCarousel2":"owlCarousel2","react":"react","react-mixin-manager":"react-mixin-manager","reactUjs":"reactUjs"}],4:[function(require,module,exports){
 
 /** @jsx React.DOM */
 var CallbackForm_Mixin, ERROR_MESSAGE, ERROR_STATE, INPUT_PLACEHOLDER, INPUT_STATE, KEYCODE_ENTER, OPEN_BUTTON_FULL_TEXT, OPEN_BUTTON_SHORT_TEXT, SEND_MESSAGE, SEND_STATE, SHOW_STATE, SUBMIT_BUTTON_TEXT, SUCCESS_MESSAGE, SUCCESS_STATE;
@@ -278,7 +315,7 @@ window.CallbackForm_Error = React.createClass({displayName: 'CallbackForm_Error'
 
 },{}],6:[function(require,module,exports){
 /**
- * Copyright (c) 2014, Facebook, Inc.
+ * Copyright (c) 2014-2015, Facebook, Inc.
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
