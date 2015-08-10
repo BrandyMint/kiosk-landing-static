@@ -9347,25 +9347,26 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 /* line 17, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-links {
+  border-top: 1px solid #3e3e3e;
   background-color: #2c3135;
 }
 
-/* line 20, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 21, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-link {
   padding: 10px;
   display: inline-block;
-  color: #999fa3;
+  color: #747c82;
 }
 
-/* line 24, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 25, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-link:hover {
   color: #c4cacf;
   text-decoration: none;
 }
 
-/* line 28, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 29, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payments-label {
   margin-right: 10px;
@@ -9373,7 +9374,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   vertical-align: middle;
 }
 
-/* line 33, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 34, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payment {
   background-image: url("../landing/images/payments/sprite.png");
@@ -9389,7 +9390,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   }
 }
 
-/* line 39, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 40, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payment-cloudpayments {
   width: 80px;
@@ -9397,7 +9398,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background-position: 0 0;
 }
 
-/* line 44, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 45, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payment-mastercard {
   width: 80px;
@@ -9405,7 +9406,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background-position: 0 -69px;
 }
 
-/* line 49, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 50, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payment-visa {
   width: 80px;
@@ -9413,7 +9414,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background-position: 0 -122px;
 }
 
-/* line 54, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 55, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payment-walletone {
   width: 59px;
@@ -9421,13 +9422,13 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background-position: 0 -152px;
 }
 
-/* line 60, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 61, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-payments + .kiosklanding-footer-integrations {
   padding-top: 10px;
 }
 
-/* line 63, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 64, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-integrations-label {
   margin-right: 10px;
@@ -9435,7 +9436,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   vertical-align: middle;
 }
 
-/* line 68, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 69, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-integration {
   background-image: url("../landing/images/integrations/sprite.png");
@@ -9451,7 +9452,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   }
 }
 
-/* line 74, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 75, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-integration-amocrm {
   width: 105px;
@@ -9459,7 +9460,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background-position: 0 0;
 }
 
-/* line 79, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 80, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-integration-moysklad {
   width: 125px;
@@ -9467,7 +9468,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
   background-position: 0 -26px;
 }
 
-/* line 84, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+/* line 85, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
 .kiosklanding-footer-integration-1c {
   width: 78px;
@@ -9476,25 +9477,25 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 }
 
 @media (max-width: 1199px) {
-  /* line 91, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+  /* line 92, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
   .kiosklanding-footer-socials .kiosklanding-socials {
     margin: 0 -8px;
   }
 
-  /* line 93, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+  /* line 94, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
   .kiosklanding-footer-socials .kiosklanding-social {
     padding: 10px 14px;
   }
 
-  /* line 96, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+  /* line 97, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
   .kiosklanding-footer-socials .kiosklanding-social-link span {
     display: none;
   }
 
-  /* line 99, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+  /* line 100, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
   .kiosklanding-footer-socials .kiosklanding-social-icon {
     margin-right: 0;
@@ -9502,7 +9503,7 @@ fieldset[disabled] .kiosklanding-callback-form-submit-button.active {
 }
 
 @media (max-width: 767px) {
-  /* line 104, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
+  /* line 105, /Users/volosojui/code/projects/kiosk/git/kiosk-landing-static/app/stylesheets/sass/modules/landing/footer */
 
   .kiosklanding-footer-socials .kiosklanding-social {
     padding: 10px 8px;
