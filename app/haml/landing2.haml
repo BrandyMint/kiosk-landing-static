@@ -143,25 +143,26 @@
             .col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
               %p != '<span class="text-nowrap">звоните  – <a href="tel:88007755661">8 (800) 77-55-661</a></span>,</span> <span class="text-nowrap">или пишите – <a href="mailto:support@kiiiosk.ru" title="support@kiiiosk.ru">support@kiiiosk.ru</a></span>'
     %footer.kiosklanding-footer
-      .container
-        %ul.kiosklanding-socials
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://www.facebook.com/kiiiosk.ru', title: 'Facebook', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-facebook>
-              %span Facebook
-            .fb-like{data: {href: 'https://www.facebook.com/kiiiosk.ru', layout: 'button_count', action: 'like', 'show-faces': false, share: 'false'}
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://instagram.com/kiiiosk/', title: 'Instagram', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-instagram>
-              %span Instagram
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://vk.com/kiiiosk', title: 'Вконтакте', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-vkontakte>
-              %span Вконтакте
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://twitter.com/@kiiiosk_ru', title: 'Twitter', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-twitter>
-              %span Twitter
+      .kiosklanding-footer-socials
+        .container
+          %ul.kiosklanding-socials
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://www.facebook.com/kiiiosk.ru', title: 'Facebook', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-facebook>
+                %span Facebook
+              .fb-like{data: {href: 'https://www.facebook.com/kiiiosk.ru', layout: 'button_count', action: 'like', 'show-faces': false, share: 'false'}
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://instagram.com/kiiiosk/', title: 'Instagram', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-instagram>
+                %span Instagram
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://vk.com/kiiiosk', title: 'Вконтакте', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-vkontakte>
+                %span Вконтакте
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://twitter.com/@kiiiosk_ru', title: 'Twitter', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-twitter>
+                %span Twitter
 
     / build:js
     %script{src: 'scripts/vendor.js'}
