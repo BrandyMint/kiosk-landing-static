@@ -6625,11 +6625,41 @@ button.close {
     padding-bottom: 90px; } }
 
 .kiosklanding-footer {
-  background-color: #32383c;
   text-align: center; }
-  .kiosklanding-footer > .container {
+
+.kiosklanding-footer-socials {
+  background-color: #32383c; }
+  .kiosklanding-footer-socials .container {
     padding-top: 10px;
     padding-bottom: 10px; }
+
+.kiosklanding-footer-links {
+  background-color: #2c3135; }
+  .kiosklanding-footer-links .container {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+.kiosklanding-footer-link {
+  padding: 10px;
+  display: inline-block;
+  color: #999fa3; }
+  .kiosklanding-footer-link:hover {
+    color: #c4cacf;
+    text-decoration: none; }
+
+@media (max-width: 1199px) {
+  .kiosklanding-footer-socials .kiosklanding-socials {
+    margin: 0 -8px; }
+  .kiosklanding-footer-socials .kiosklanding-social {
+    padding: 10px 14px; }
+  .kiosklanding-footer-socials .kiosklanding-social-link span {
+    display: none; }
+  .kiosklanding-footer-socials .kiosklanding-social-icon {
+    margin-right: 0; } }
+
+@media (max-width: 767px) {
+  .kiosklanding-footer-socials .kiosklanding-social {
+    padding: 10px 8px; } }
 
 .kiosklanding-socials {
   margin: 0;
