@@ -178,25 +178,32 @@
             .col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
               %p != '<span class="text-nowrap">пишите – <a href="mailto:support@kiiiosk.ru" title="support@kiiiosk.ru">support@kiiiosk.ru</a></span>'
     %footer.kiosklanding-footer
-      .container
-        %ul.kiosklanding-socials
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://www.facebook.com/kiiiosk.ru', title: 'Facebook', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-facebook>
-              %span Facebook
-            .fb-like{data: {href: 'https://www.facebook.com/kiiiosk.ru', layout: 'button_count', action: 'like', 'show-faces': false, share: 'false'}
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://instagram.com/kiiiosk/', title: 'Instagram', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-instagram>
-              %span Instagram
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://vk.com/kiiiosk', title: 'Вконтакте', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-vkontakte>
-              %span Вконтакте
-          %li.kiosklanding-social
-            %a.kiosklanding-social-link{href: 'https://twitter.com/@kiiiosk_ru', title: 'Twitter', target: '_blank'}
-              %i.kiosklanding-social-icon.kiosklanding-social-icon-twitter>
-              %span Twitter
+      .kiosklanding-footer-socials
+        .container
+          %ul.kiosklanding-socials
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://www.facebook.com/kiiiosk.ru', title: 'Facebook', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-facebook>
+                %span Facebook
+              .fb-like{data: {href: 'https://www.facebook.com/kiiiosk.ru', layout: 'button_count', action: 'like', 'show-faces': false, share: 'false'}
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://instagram.com/kiiiosk/', title: 'Instagram', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-instagram>
+                %span Instagram
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://vk.com/kiiiosk', title: 'Вконтакте', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-vkontakte>
+                %span Вконтакте
+            %li.kiosklanding-social
+              %a.kiosklanding-social-link{href: 'https://twitter.com/@kiiiosk_ru', title: 'Twitter', target: '_blank'}
+                %i.kiosklanding-social-icon.kiosklanding-social-icon-twitter>
+                %span Twitter
+      .kiosklanding-footer-links
+        .container
+          %a.kiosklanding-footer-link{href: '/prices', title: 'Тарифы'} Тарифы
+          %a.kiosklanding-footer-link{href: '/rules', title: 'Правила e-commerce'} Правила e-commerce
+          %a.kiosklanding-footer-link{href: '/offer', title: 'Оферта'} Оферта
+          %a.kiosklanding-footer-link{href: '/job', title: 'Вакансии'} Вакансии
 
     #modal-tarrifs.modal.kiosklanding-modal-tarrifs.fade{tabindex: '-1', role: 'dialog'}
       .modal-dialog{role: 'document'}
