@@ -121,7 +121,7 @@ module.exports = {
       }
     }
     htmls: {
-      src: src + '/haml/landing2.haml'
+      src: src + '/haml/*.haml'
       replace:
         js:  'bundle.min.js'
         css: 'bundle.min.css'
@@ -129,7 +129,7 @@ module.exports = {
         images:
           str: /landing\//g
           newStr: ''
-      outputName: 'index.html'
+      # outputName: 'index.html'
       dest: dist
     }
     assets: {
