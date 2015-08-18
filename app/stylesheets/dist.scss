@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-$images-path: "system/images";
-$fonts-path: "system/fonts";
-$entypoPlusWebfontPath: 'system/fonts';
+$images-path: "images";
+$fonts-path: "fonts";
+$entypoPlusWebfontPath: $fonts-path;
 
 @import "sass/bundle";
