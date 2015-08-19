@@ -1,10 +1,8 @@
 gulp         = require 'gulp'
-flatten      = require 'gulp-flatten'
 handleErrors = require '../../util/handleErrors'
-config       = require('../../config').fonts.production
+config       = require('../../config').favicons.local
 
-gulp.task '[Production] Fonts', ->
+gulp.task '[Local] Favicons', ->
   gulp.src config.src
     .on 'error', handleErrors
-    .pipe flatten()
     .pipe gulp.dest config.dest
