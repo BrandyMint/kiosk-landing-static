@@ -1,9 +1,9 @@
 gulp         = require 'gulp'
 flatten      = require 'gulp-flatten'
-handleErrors = require '../util/handleErrors'
-config       = require('../config').local.fonts
+handleErrors = require '../../util/handleErrors'
+config       = require('../../config').fonts.local
 
-gulp.task 'fonts', ->
+gulp.task '[Local] Fonts', ->
   gulp.src config.src
     .on 'error', handleErrors
     .pipe flatten()

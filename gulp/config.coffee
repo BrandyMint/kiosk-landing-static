@@ -14,104 +14,81 @@ module.exports = {
     }
     files: [build + '/**']
   }
-  local: {
-    scripts: {
+  ghPages: {
+    src: build + '/**/*'
+    options: {
+      message: 'gh-pages'
+    }
+  }
+  scripts: {
+    dependencies: {
+      'jquery': './jquery/dist/jquery'
+      'bootstrapSass': './bootstrap-sass-official/assets/javascripts/bootstrap'
+      'react': './react/react-with-addons'
+      'react-mixin-manager': './react-mixin-manager/react-mixin-manager'
+      'reactUjs': '../scripts/resources/react_ujs'
+      'eventEmitter': './eventEmitter/EventEmitter'
+      'accounting': './accounting.js/accounting'
+      'lodash': './lodash/dist/lodash'
+      'owlCarousel2': './owl.carousel/dist/owl.carousel'
+      'jquery.scrollTo': './jquery.scrollTo/jquery.scrollTo'
+    }
+    local: {
       vendor: {
         baseDir: src + '/bower_components'
-        dest: build + '/scripts'
-        outputName: 'vendor.js'
         extensions: ['.coffee']
+        outputName: 'vendor.js'
+        dest: build + '/scripts'
       }
       client: {
         entries: src + '/scripts/main.coffee'
-        dest: build + '/scripts'
-        outputName: 'client.js'
         extensions: ['.coffee', '.js.jsx.coffee']
+        outputName: 'client.js'
+        dest: build + '/scripts'
       }
     }
-    haml: {
-      src: src + '/haml/*.haml'
-      replace:
-        counters: ''
-      dest: build
-    }
-    sass: {
-      src: src + '/stylesheets/local.scss'
-      dest: build + '/stylesheets'
-      outputName: 'local.css'
-    }
-    uncss: {
-      src: build + '/stylesheets/local.css'
-      dest: build + '/stylesheets'
-      htmls: build + '/*.html'
-      ignore: [
-        /kiosklanding/
-        /input/
-        /button/
-        /btn/
-        /hidden/
-        /owl/
-        /popover/
-        /modal/
-        /fade/
-        /.\in/
-        /table/
-        /table-responsive/
-      ]
-      outputName: 'local.css'
-    }
-    fonts: {
-      src: src + '/**/*.{ttf,woff,woff2,eof,eot,svg}'
-      dest: build + '/fonts'
-    }
-    images: {
-      src: src + '/images/**/*'
-      dest: build + '/images'
-    }
-    favicons: {
-      src: src + '/landing/favicons/**/*'
-      dest: build + '/favicons'
-    }
-  }
-  production: {
-    scripts: {
+    production: {
       bundle: {
-        baseDir: src
-        entries: './scripts/bundle.coffee'
+        baseDir: src + '/bower_components'
+        entries: '../scripts/bundle.coffee'
         extensions: ['.coffee', '.js.jsx.coffee']
-        dest: dist
         outputName: 'bundle.js'
+        dest: dist
       }
       minify: {
         src: dist + '/bundle.js'
-        dest: dist
         outputName: 'bundle.min.js'
+        dest: dist
       }
     }
-    styles: {
-      bundle: {
-        src: src + '/stylesheets/dist.scss'
-        dest: dist
-        outputName: 'bundle.css'
-      }
-      uncss: {
-        src: dist + '/bundle.css'
-        dest: dist
-        htmls: dist + '/*.html'
-        ignore: [
-          /kiosklanding/
-          /input/
-          /button/
-          /btn/
-          /hidden/
-          /owl/
-          /popover/
-          /modal/
-          /fade/
-          /.\in/
-          /table/
-          /table-responsive/
+  }
+  styles: {
+    local: {
+      src: src + '/stylesheets/local.scss'
+      options: {
+        errLogToConsole: true
+        sourceComments: 'normal'
+        includePaths: [
+          './app/stylesheets/'
+          './app/bower_components/'
+          './app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap'
         ]
+      }
+      dest: build + '/stylesheets'
+      outputName: 'local.css'
+    }
+    production: {
+      bundle: {
+        src: src + '/stylesheets/production.scss'
+        options: {
+          errLogToConsole: true
+          includePaths: [
+            './app/stylesheets/'
+            './app/bower_components/'
+            './app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap'
+          ]
+        }
+        dest: dist
         outputName: 'bundle.css'
       }
       minify: {
@@ -120,28 +97,50 @@ module.exports = {
         outputName: 'bundle.min.css'
       }
     }
-    htmls: {
+  }
+  html: {
+    local: {
       src: src + '/haml/*.haml'
       replace:
-        js:  'bundle.min.js'
+        counters: ''
+      dest: build
+    }
+    production: {
+      src: src + '/haml/*.haml'
+      replace:
+        js: 'bundle.min.js'
         css: 'bundle.min.css'
-      replacePath:
-        images:
-          str: /landing\//g
-          newStr: ''
-      # outputName: 'index.html'
       dest: dist
     }
-    assets: {
-      src: [
-        src + '/landing/**/*.*'
-        src + '/landing/**/*.*'
-      ]
-      dest: dist
+  }
+  fonts: {
+    local: {
+      src: src + '/**/*.{ttf,woff,woff2,eof,eot,svg}'
+      dest: build + '/fonts'
     }
-    fonts: {
+    production: {
       src: src + '/**/*.{ttf,woff,woff2,eof,eot,svg}'
       dest: dist + '/fonts'
+    }
+  }
+  images: {
+    local: {
+      src: src + '/images/**/*'
+      dest: build + '/images'
+    }
+    production: {
+      src: src + '/images/**/*'
+      dest: dist + '/images'
+    }
+  }
+  favicons: {
+    local: {
+      src: src + '/favicons/**/*'
+      dest: build + '/favicons'
+    }
+    production: {
+      src: src + '/favicons/**/*'
+      dest: dist + '/favicons'
     }
   }
 }

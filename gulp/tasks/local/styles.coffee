@@ -1,12 +1,14 @@
 gulp         = require 'gulp'
+sass         = require 'gulp-sass'
+autoprefixer = require 'gulp-autoprefixer'
 rename       = require 'gulp-rename'
-minifyCSS    = require 'gulp-minify-css'
 handleErrors = require '../../util/handleErrors'
-config       = require('../../config').styles.production.minify
+config       = require('../../config').styles.local
 
-gulp.task '[Production] MinifyStyles', ['[Production] Styles'], ->
+gulp.task '[Local] Styles', ->
   gulp.src config.src
-    .pipe minifyCSS()
+    .pipe sass config.options
     .on 'error', handleErrors
+    .pipe autoprefixer('last 2 versions')
     .pipe rename config.outputName
     .pipe gulp.dest config.dest
