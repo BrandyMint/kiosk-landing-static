@@ -64,21 +64,36 @@ module.exports = {
   }
   styles: {
     local: {
-      src: src + '/stylesheets/local.scss'
-      options: {
-        errLogToConsole: true
-        sourceComments: 'normal'
-        includePaths: [
-          './app/stylesheets/'
-          './app/bower_components/'
-          './app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap'
-        ]
+      sass: {
+        src: src + '/stylesheets/local.scss'
+        options: {
+          errLogToConsole: true
+          sourceComments: 'normal'
+          includePaths: [
+            './app/stylesheets/'
+            './app/bower_components/'
+            './app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap'
+          ]
+        }
+        outputName: 'local.sass.css'
+        dest: build + '/stylesheets'
       }
-      dest: build + '/stylesheets'
-      outputName: 'local.css'
+      postcss: {
+        src: src + '/stylesheets/local.pcss.css'
+        outputName: 'local.pcss.css'
+        dest: build + '/stylesheets'
+      }
+      bundle: {
+        src: [
+          build + '/stylesheets/local.sass.css'
+          build + '/stylesheets/local.pcss.css'
+        ]
+        outputName: 'local.css'
+        dest: build + '/stylesheets'
+      }
     }
     production: {
-      bundle: {
+      sass: {
         src: src + '/stylesheets/production.scss'
         options: {
           errLogToConsole: true
@@ -88,13 +103,26 @@ module.exports = {
             './app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap'
           ]
         }
+        outputName: 'bundle.sass.css'
         dest: dist
+      }
+      postcss: {
+        src: src + '/stylesheets/production.pcss.css'
+        outputName: 'bundle.pcss.css'
+        dest: dist
+      }
+      bundle: {
+        src: [
+          dist + '/bundle.sass.css'
+          dist + '/bundle.pcss.css'
+        ]
         outputName: 'bundle.css'
+        dest: dist
       }
       minify: {
         src: dist + '/bundle.css'
-        dest: dist
         outputName: 'bundle.min.css'
+        dest: dist
       }
     }
   }
