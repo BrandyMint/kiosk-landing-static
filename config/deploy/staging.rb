@@ -1,4 +1,6 @@
 set :stage, :staging
-set :deploy_to, ->{"/home/wwwmerchantly/#{fetch(:application)}"}
-server 'srv-2.kiiiosk.ru', user: 'wwwmerchantly', port: 2224
+set :deploy_to, ->{"/home/wwwkiiiosk/#{fetch(:application)}"}
+server 'icfdev.ru', user: 'wwwkiiiosk', port: 250
+server 'icfdev.ru', user: 'wwwkiiiosk', port: 251
+
 set :branch, ENV['BRANCH'] || 'master'
